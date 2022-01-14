@@ -1,25 +1,43 @@
-# Alchemy React Base Template
+# EPIC Plan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## App.js / Routes
 
-Use this template for all your "from scratch" deliverables. To start, simply run
+- Protected Routes
+  - [ ] Full home page
+  - [ ] add post page
+- Routes
+  - [ ] "/" title page + preview
+  - [ ] "/" main home page if you're signed in
+  - [ ] "/auth" sign in/sign up
+  - [ ] "/post/:id" Single Post View w/ Post detail
+  - [ ] "/post/:id/edit" edit post
+  - [ ] "/create" adding a post
+  - [ ] "/about" about us
 
-- `npm install`
-- `npm start`
+## Utils
 
-## Available Scripts
+- [ ] protected route function
 
-In the project directory, you can run:
+## Views
 
-### `npm start`
+- [ ] Auth.js (sign in/sign up)
+- [ ] Title.js
+- [ ] Posts.js
+- [ ] Post.js
+- [ ] Edit.js
+- [ ] Create.js
+- [ ] About.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Components
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [ ] AuthForm.js
+- [ ] Preview.js (with title and previews)
+- [ ] PostList.js
+- [ ] PostDetail.js
+- [ ] PostForm.js (for both Edit and Create)
 
-### `npm test`
+## Services
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] client.js
+- [ ] posts.js
+- [ ] users.js
