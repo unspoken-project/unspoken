@@ -21,16 +21,16 @@ function App() {
           <Title setCurrentUser={setCurrentUser} />
         </Route>
         <ProtectedRoute currentUser={currentUser} exact path="/posts">
-          <Posts user={currentUser} />
+          <Posts currentUser={currentUser} />
         </ProtectedRoute>
         <ProtectedRoute currentUser={currentUser} exact path="/posts/:id/edit">
-          <Edit user={currentUser} />
+          <Edit currentUser={currentUser} />
         </ProtectedRoute>
         <ProtectedRoute currentUser={currentUser} exact path="/create">
-          <Create user={currentUser} />
+          <Create currentUser={currentUser} />
         </ProtectedRoute>
         <ProtectedRoute currentUser={currentUser} exact path="/posts/:id">
-          <Post user={currentUser} />
+          <Post currentUser={currentUser} />
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>
