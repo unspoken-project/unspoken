@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { signInUser, signUpUser } from '../../services/users';
-import AuthForm from '../../components/Auth/AuthForm';
-import './Auth.css';
+import AuthForm from '../../components/AuthForm/AuthForm';
 import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
 

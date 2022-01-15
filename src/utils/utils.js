@@ -5,7 +5,7 @@ export default function ProtectedRoute({ currentUser, path, children, ...rest })
     <Route
       path={path}
       {...rest}
-      render={() => (currentUser ? { ...children } : <Redirect to="/auth" />)}
+      render={() => (currentUser ? { ...children } : <Redirect to="/" />)}
     />
   );
 }
