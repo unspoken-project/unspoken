@@ -1,25 +1,26 @@
 import React from 'react';
 
-export default function PostForm({ title, setTitle, content, setContent }) {
+export default function PostForm({ handleSubmit, updatePost, post }) {
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input
           placeholder="title"
-          value={title}
+          value={post.post_title}
           name="title"
           type="text"
-          onInput={(e) => setTitle(e.target.value)}
+          onInput={(e) => updatePost('title', e.target.value)}
         />
         <label>Content</label>
         <input
           placeholder="content"
-          value={content}
+          value={post.post_content}
           name="content"
           type="text"
-          onInput={(e) => setContent(e.target.value)}
+          onInput={(e) => updatePost('content', e.target.value)}
         />
+        <input type="submit" />
       </form>
     </div>
   );
