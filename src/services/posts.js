@@ -20,7 +20,10 @@ export async function createPost(post) {
 }
 
 export async function editPost(post) {
-  const resp = await client.from('unspoken').update(post).eq('id', post.id);
+  const resp = await client
+    .from('unspoken')
+    .update({ post_title: post.title, post_content: post.content, user_id: client.auth.user().id })
+    .eq('id', post.id);
   return checkError(resp);
 }
 
