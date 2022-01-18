@@ -4,14 +4,13 @@
 
 - Protected Routes
   - [ ] Full home page
-  - [ ] add post page
+  - [ ] "/create" adding a post
+  - [ ] "/post/:id/edit" edit post
 - Routes
   - [ ] "/" title page + preview
   - [ ] "/" main home page if you're signed in
   - [ ] "/auth" sign in/sign up
   - [ ] "/post/:id" Single Post View w/ Post detail
-  - [ ] "/post/:id/edit" edit post
-  - [ ] "/create" adding a post
   - [ ] "/about" about us
 
 ## Utils
@@ -20,7 +19,7 @@
 
 ## Views
 
-- [ ] Auth.js (sign in/sign up)
+- [x] Auth.js (sign in/sign up)
 - [ ] Title.js
 - [ ] Posts.js
 - [ ] Post.js
@@ -30,7 +29,7 @@
 
 ## Components
 
-- [ ] AuthForm.js
+- [x] AuthForm.js
 - [ ] Preview.js (with title and previews)
 - [ ] PostList.js
 - [ ] PostDetail.js
