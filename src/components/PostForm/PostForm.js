@@ -7,7 +7,7 @@ export default function PostForm({ handleSubmit, updatePost, post }) {
         <label>Title</label>
         <input
           placeholder="title"
-          value={post.post_title}
+          value={post.title}
           name="title"
           type="text"
           onInput={(e) => updatePost('title', e.target.value)}
@@ -15,7 +15,7 @@ export default function PostForm({ handleSubmit, updatePost, post }) {
         <label>Content</label>
         <input
           placeholder="content"
-          value={post.post_content}
+          value={post.content}
           name="content"
           type="text"
           onInput={(e) => updatePost('content', e.target.value)}

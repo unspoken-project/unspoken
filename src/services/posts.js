@@ -12,8 +12,8 @@ export async function getPostById(id) {
 
 export async function createPost(post) {
   const resp = await client.from('unspoken').insert({
-    title: post.post_title,
-    content: post.post_content,
+    post_title: post.title,
+    post_content: post.content,
     user_id: client.auth.user().id,
   });
   return checkError(resp);
