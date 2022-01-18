@@ -20,7 +20,7 @@ export default function Auth({ setCurrentUser }) {
           ? await signInUser(username, email, password)
           : await signUpUser(username, email, password);
       setCurrentUser(resp);
-      history.push('/');
+      history.push('/posts');
     } catch {
       setErrorMessage('Something went wrong. Please try again.');
     }
