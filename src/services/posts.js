@@ -11,9 +11,11 @@ export async function getPostById(id) {
 }
 
 export async function createPost(post) {
-  const resp = await client
-    .from('unspoken')
-    .insert([{ post: post, user_id: client.auth.user().id }]);
+  const resp = await client.from('unspoken').insert({
+    post_title: post.title,
+    post_content: post.content,
+    user_id: client.auth.user().id,
+  });
   return checkError(resp);
 }
 

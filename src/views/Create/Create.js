@@ -1,13 +1,27 @@
 import React, { useState } from 'react';
 import PostForm from '../../components/PostForm/PostForm';
+import { createPost } from '../../services/posts';
 
 export default function Create() {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
+  const [post, setPost] = useState({});
 
+  const updatePost = (key, value) => {
+    post[key] = value;
+    setPost({ ...post });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await createPost(post);
+      alert('post created');
+    } catch {
+      alert('error creating');
+    }
+  };
   return (
     <div>
-      <PostForm title={title} setTitle={setTitle} content={content} setContent={setContent} />
+      <PostForm handleSubmit={handleSubmit} updatePost={updatePost} post={{ ...post }} />
     </div>
   );
 }
