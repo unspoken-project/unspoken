@@ -17,7 +17,7 @@ export default function Auth({ setCurrentUser }) {
     try {
       const resp =
         type === 'signin'
-          ? await signInUser(username, password)
+          ? await signInUser(username, email, password)
           : await signUpUser(username, email, password);
       setCurrentUser(resp);
       history.push('/');
