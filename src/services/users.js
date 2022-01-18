@@ -14,6 +14,7 @@ export async function signUpUser(username, email, password) {
 
 export async function signInUser(username, email, password) {
   const { user, error } = await client.auth.signIn({ username, email, password });
+
   if (error) {
     throw error;
   }
