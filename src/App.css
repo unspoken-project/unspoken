@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive&family=Gamja+Flower&family=Indie+Flower&family=Roboto+Mono&family=Swanky+and+Moo+Moo&display=swap');
 
+body {
+  background-image: linear-gradient(
+    110.1deg,
+    rgba(30, 2, 83, 1) 44.2%,
+    rgba(198, 55, 160, 1) 138.2%
+  );
+}
+
 .App {
   text-align: center;
 }
