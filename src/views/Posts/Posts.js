@@ -6,6 +6,7 @@ import './Posts.css';
 export default function Posts() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,11 +21,28 @@ export default function Posts() {
     return <h3>Loading...</h3>;
   }
 
+  const handleNextPage = () => {
+    setPage((prevState) => ++prevState);
+    setLoading(true);
+  };
+
+  const handlePrevPage = () => {
+    setPage((prevState) => --prevState);
+    setLoading(true);
+  };
+
   return (
-    <div className="post-list">
-      {posts.map((item) => (
-        <Preview key={item.id} {...item} />
-      ))}
-    </div>
+    <>
+      <div className="post-list">
+        {posts.map((item) => (
+          <Preview key={item.id} {...item} />
+        ))}
+      </div>
+      <div className="page-nav">
+        <div className="page-number">Page: {page}</div>
+        <button onClick={handlePrevPage}>Previous Page</button>
+        <button onClick={handleNextPage}>Next Page</button>
+      </div>
+    </>
   );
 }

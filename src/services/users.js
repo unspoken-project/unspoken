@@ -1,21 +1,18 @@
 import { checkError, client } from './client';
 
 export async function getUser() {
-  try {
-    const session = client.auth.session();
-    const { data, error, status } = await client
-      .from('profiles')
-      .select('username')
-      .match({ id: session.user.id })
-      .single();
-    if (error && status !== 406) {
-      throw error;
-    }
-    if (data) {
-      return { ...session.user, ...data };
-    }
-  } catch (error) {
-    alert('try again');
+  const session = client.auth.session();
+  const { data, error } = await client
+    .from('profiles')
+    .select('*')
+    .match({ id: session.user.id })
+    .single();
+
+  if (error) {
+    throw error;
+  }
+  if (data) {
+    return { ...session.user, ...data };
   }
 }
 
@@ -40,7 +37,7 @@ export async function signInUser(email, password) {
   return user;
 }
 
-export async function signOut() {
+export async function logout() {
   const resp = await client.auth.signOut();
   return checkError(resp);
 }
