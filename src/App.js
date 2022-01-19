@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getUser } from './services/users';
 import ProtectedRoute from './utils/utils';
 import Posts from './views/Posts/Posts';
@@ -9,16 +9,32 @@ import Edit from './views/Edit/Edit';
 import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import Header from './components/Header/Header';
+import Auth from './views/Auth/Auth';
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(getUser());
+  const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await getUser();
+      setCurrentUser(user);
+      setLoading(false);
+    };
+    fetchUser();
+  }, []);
+
+  if (loading) {
+    return <h2>loading</h2>;
+  }
 
   return (
     <BrowserRouter>
       <Header currentUser={currentUser} />
       <Switch>
         <Route exact path="/">
-          <Title setCurrentUser={setCurrentUser} />
+          {currentUser && <Title setCurrentUser={setCurrentUser} />}
+          {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
         </Route>
         <ProtectedRoute currentUser={currentUser} exact path="/posts">
           <Posts currentUser={currentUser} />

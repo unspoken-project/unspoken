@@ -35,3 +35,12 @@
   text-overflow: ellipsis;
   max-width: 40vw;
 }
+.click-post {
+  color: black;
+  text-decoration: none;
+}
+
+.click-post:hover {
+  text-decoration: underline 4px black;
+  width: fit-content;
+}

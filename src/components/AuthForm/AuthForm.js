@@ -10,19 +10,23 @@ export default function AuthForm({
   password,
   setPassword,
   handleSubmit,
+  type,
 }) {
   return (
     <div>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
       <form className="form" onSubmit={handleSubmit}>
+        {type === 'signup' && (
+          <div>
+            <label>Username: </label>
+            <input type="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+          </div>
+        )}
         <label>Email: </label>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
         <label>Password: </label>
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-
-        <label>Username: </label>
-        <input type="username" value={username} onChange={(e) => setUsername(e.target.value)} />
 
         <input type="submit" className="submit-btn" />
       </form>
