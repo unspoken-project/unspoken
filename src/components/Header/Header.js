@@ -10,26 +10,14 @@ export default function Header() {
     history.push(`/create`);
   };
 
-
   return (
-    <div>
-      <header>
-        <button className="create-button" onClick={handleSubmit}>
-          Create Post
-        </button>
-        <div className="header-links">
-          <div>
-            <NavLink className="home-link" to="/posts">
-              {' '}
-              Home{' '}
-            </NavLink>
-            <NavLink className="login-link" to="/">
-              {' '}
-              Login/Sign-Up{' '}
-            </NavLink>
-          </div>
-        </div>
-      </header>
+    <div className="header-links">
+      <span>
+        <NavLink to="/posts">Home </NavLink>
+      </span>
+      <button className="create-button" onClick={handleSubmit}>
+        Create Post
+      </button>
     </div>
   );
 }

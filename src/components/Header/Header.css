@@ -1,32 +1,16 @@
-.create-button {
-  position: fixed;
-  right: 150px;
-}
-
 .header-links {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
-.header-links > div {
+
+.header-links a {
   font-size: 2rem;
-  text-decoration: none;
 }
 
-.home-link {
-  text-decoration: none;
-  margin-right: 50px;
-}
-
-.home-link:hover {
-  text-decoration: underline 3px black;
-  width: fit-content;
-}
-
-.login-link {
-  text-decoration: none;
-}
-
-.login-link:hover {
-  text-decoration: underline 3px black;
-  width: fit-content;
+.header-links span {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
 }

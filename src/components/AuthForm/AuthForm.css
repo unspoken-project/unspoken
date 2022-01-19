@@ -31,12 +31,7 @@ input {
   padding: 1.5rem;
 }
 
-button {
-  font-size: 2rem;
-  color: cadetblue;
-  background-color: rgb(255, 94, 0);
+form button {
   width: fit-content;
   margin: auto;
-  border-radius: 1rem;
-  padding: 0.75rem;
 }

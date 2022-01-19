@@ -1,7 +1,6 @@
 .preview-card-container {
   display: flex;
   flex-direction: column;
-  /* border: 5px solid var(--color-5); */
   border-radius: 3rem;
   margin: 10px;
   background-color: rgba(242, 233, 228, 0.3);
