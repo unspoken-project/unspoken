@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import './Header.css';
 
-export default function Header({ currentUser }) {
+export default function Header() {
   const history = useHistory();
 
   const handleSubmit = async (e) => {
