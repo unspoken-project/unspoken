@@ -13,20 +13,20 @@ import Auth from './views/Auth/Auth';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchUser = async () => {
       const user = await getUser();
       setCurrentUser(user);
-      setLoading(false);
+      // setLoading(false);
     };
     fetchUser();
   }, []);
 
-  if (loading) {
-    return <h2>loading</h2>;
-  }
+  // if (loading) {
+  //   return <h2>loading</h2>;
+  // }
 
   return (
     <BrowserRouter>
