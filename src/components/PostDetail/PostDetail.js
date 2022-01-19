@@ -9,7 +9,7 @@ export default function PostDetail({ post, handleDelete }) {
         <h1>{post.post_title}</h1>
         <p>{post.post_content}</p>
       </div>
-      <div className="buttons">
+      <div className="post-buttons">
         <button>
           <Link to={`/posts/${post.id}/edit`}>Edit</Link>
         </button>

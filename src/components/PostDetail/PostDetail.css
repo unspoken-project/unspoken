@@ -6,7 +6,7 @@
   background-color: darkgray;
 }
 
-.buttons {
+.post-buttons {
   display: flex;
   margin: 10px auto;
   justify-content: center;

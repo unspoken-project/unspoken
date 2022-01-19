@@ -3,6 +3,9 @@
 .App {
   text-align: center;
 }
+body {
+  background-image: url(https://external-preview.redd.it/mu1mjDw6HBsj5j4CFOy39wHLL90ZiWUYCTlXCJX6iyc.jpg?auto=webp&s=1b1754bbec2947304b4a0ab373bd4c4597b5767e);
+}
 
 * {
   --color-1: #22223b;
