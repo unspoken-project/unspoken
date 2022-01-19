@@ -1,17 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './PostDetail.css';
 
 export default function PostDetail({ post, handleDelete }) {
   return (
-    <div className="post-details">
-      <h1>{post.post_title}</h1>
-      <h3>{post.post_content}</h3>
+    <>
+      <div className="post-details">
+        <h1>{post.post_title}</h1>
+        <p>{post.post_content}</p>
+      </div>
+      <div className="buttons">
+        <button>
+          <Link to={`/posts/${post.id}/edit`}>Edit</Link>
+        </button>
 
-      <Link key={post.id} to={`/posts/${post.id}/edit`}>
-        Edit
-      </Link>
-
-      <button onClick={handleDelete}> Delete Post</button>
-    </div>
+        <button onClick={handleDelete}> Delete Post</button>
+      </div>
+    </>
   );
 }
