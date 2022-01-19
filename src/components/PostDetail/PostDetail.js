@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function PostDetail({ post, post_title, post_content, handleDelete }) {
+export default function PostDetail({ post, handleDelete }) {
   return (
     <div className="post-details">
-      <h1>{post_title}</h1>
-      <h3>{post_content}</h3>
+      <h1>{post.post_title}</h1>
+      <h3>{post.post_content}</h3>
 
       <Link key={post.id} to={`/posts/${post.id}/edit`}>
         Edit
