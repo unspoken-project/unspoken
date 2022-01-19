@@ -15,7 +15,7 @@ export default function PostForm({ handleSubmit, updatePost, post }) {
         />
         <label>Tell Us More...</label>
         <textarea
-          placeholder="content"
+          placeholder="content (minimum 6 characters)"
           value={post.post_content}
           name="content"
           type="text"

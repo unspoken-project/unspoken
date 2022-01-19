@@ -9,25 +9,16 @@
     U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6;
 }
 
-.links {
-  display: flex;
-  flex-direction: row;
-}
-
 .tabs {
   display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
+  justify-content: space-between;
+  /* margin-top: 1rem; */
 }
 
 .signin-tab {
-  margin: auto;
-  margin-left: 34rem;
 }
 
 .signup-tab {
-  margin: auto;
-  margin-right: 34rem;
 }
 
 h3 {
