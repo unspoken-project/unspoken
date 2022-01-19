@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import './Auth.css';
 
 export default function Auth({ setCurrentUser }) {
-  const [type, setType] = useState('signin'); // or signup
+  const [type, setType] = useState('signin');
   const [errorMessage, setErrorMessage] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -22,7 +22,7 @@ export default function Auth({ setCurrentUser }) {
           : await signUpUser(username, email, password);
       setCurrentUser(resp);
       history.push('/posts');
-    } catch {
+    } catch (e) {
       setErrorMessage('Something went wrong. Please try again.');
     }
   };
