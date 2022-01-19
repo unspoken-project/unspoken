@@ -1,26 +1,21 @@
-* {
-  font-family: 'Gamja Flower';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/gamjaflower/v18/6NUR8FiKJg-Pa0rM6uN40Z4kzP9Ddt3saGoQnQfTCJMp5TZTP8x_uFxjfQ.0.woff2)
-    format('woff2');
-  unicode-range: U+f9ca-fa0b, U+ff03-ff05, U+ff07, U+ff0a-ff0b, U+ff0d-ff19, U+ff1b, U+ff1d,
-    U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6;
-}
-
-.tabs {
+.auth-container {
   display: flex;
-  justify-content: space-between;
-  /* margin-top: 1rem; */
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+}
+.auth-tabs {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.signin-tab {
+.auth-tabs h3 {
+  color: red;
 }
 
-.signup-tab {
+.auth-tabs h3.active {
+  color: blue;
 }
-
 h3 {
   font-size: 2rem;
 }

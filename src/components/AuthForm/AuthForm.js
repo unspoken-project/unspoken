@@ -13,9 +13,9 @@ export default function AuthForm({
   type,
 }) {
   return (
-    <div>
+    <>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="auth-form" onSubmit={handleSubmit}>
         {type === 'signup' && (
           <div>
             <label>Username: </label>
@@ -30,6 +30,6 @@ export default function AuthForm({
 
         <input type="submit" className="submit-btn" />
       </form>
-    </div>
+    </>
   );
 }

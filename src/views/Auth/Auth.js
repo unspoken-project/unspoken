@@ -27,28 +27,25 @@ export default function Auth({ setCurrentUser }) {
     }
   };
   return (
-    <div className="auth">
-      <div className="tabs">
-        <div className="signin-tab">
-          <h3
-            onClick={() => {
-              setType('signin');
-            }}
-            className={classNames({ active: type === 'signin' })}
-          >
-            Sign In
-          </h3>
-        </div>
-        <div className="signup-tab">
-          <h3
-            onClick={() => {
-              setType('signup');
-            }}
-            className={classNames({ active: type === 'signup' })}
-          >
-            Sign Up
-          </h3>
-        </div>
+    <div className="auth-container">
+      <div className="auth-tabs">
+        <h3
+          onClick={() => {
+            setType('signin');
+          }}
+          className={classNames({ active: type === 'signin' })}
+        >
+          Sign In
+        </h3>
+
+        <h3
+          onClick={() => {
+            setType('signup');
+          }}
+          className={classNames({ active: type === 'signup' })}
+        >
+          Sign Up
+        </h3>
       </div>
       <AuthForm
         username={username}
