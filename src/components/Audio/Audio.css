@@ -1,0 +1,17 @@
+.audio-player {
+  display: flex;
+  width: 500px;
+}
+
+.audio-button {
+  background: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border-color: #22223b 4px solid;
+}
+
+.audio-button:hover {
+  color: #c9ada7;
+}
