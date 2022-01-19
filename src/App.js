@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { getUser } from './services/users';
 import ProtectedRoute from './utils/utils';
 import Posts from './views/Posts/Posts';
-import Title from './views/Title/Title';
+// import Title from './views/Title/Title';
 import Edit from './views/Edit/Edit';
 import Create from './views/Create/Create';
 import Post from './views/Post/Post';
@@ -20,7 +20,6 @@ function App() {
     const fetchUser = async () => {
       const user = await getUser();
       setCurrentUser(user);
-      console.log(user);
       setLoading(false);
     };
     fetchUser();
@@ -37,7 +36,7 @@ function App() {
         <Header currentUser={currentUser} />
         <Switch>
           <Route exact path="/">
-            {currentUser && <Title setCurrentUser={setCurrentUser} />}
+            {currentUser && <Posts setCurrentUser={setCurrentUser} />}
             {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
           </Route>
           <ProtectedRoute currentUser={currentUser} exact path="/posts">
