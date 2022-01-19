@@ -15,7 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header />
+      <Header currentUser={currentUser} />
       <Switch>
         <Route exact path="/">
           <Title setCurrentUser={setCurrentUser} />
