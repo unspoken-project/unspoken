@@ -41,14 +41,13 @@ export default function Header({ currentUser }) {
             </button>
           )}
           <div>
-
             {currentUser && (
               <NavLink className="home-link" to="/posts">
                 {' '}
                 Home{' '}
               </NavLink>
             )}
-            
+
             <NavLink className="login-link" to="/">
               Login/Sign-Up
             </NavLink>

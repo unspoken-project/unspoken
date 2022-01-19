@@ -7,7 +7,7 @@ export async function getUser() {
     .select('*')
     .match({ id: session.user.id })
     .single();
-
+  console.log(data);
   if (error) {
     throw error;
   }
