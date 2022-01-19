@@ -1,0 +1,46 @@
+body {
+  background-color: blanchedalmond;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 3rem;
+  background-color: cadetblue;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+input {
+  padding: 0.25rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.submit-btn {
+  font-family: 'Gamja Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.bio {
+  padding: 1.5rem;
+}
+
+button {
+  font-size: 2rem;
+  color: cadetblue;
+  background-color: rgb(255, 94, 0);
+  width: fit-content;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 0.75rem;
+}

@@ -3,6 +3,7 @@ import { signInUser, signUpUser } from '../../services/users';
 import AuthForm from '../../components/AuthForm/AuthForm';
 import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
+import './Auth.css';
 
 export default function Auth({ setCurrentUser }) {
   const [type, setType] = useState('signin'); // or signup
@@ -28,22 +29,26 @@ export default function Auth({ setCurrentUser }) {
   return (
     <div className="auth">
       <div className="tabs">
-        <h3
-          onClick={() => {
-            setType('signin');
-          }}
-          className={classNames({ active: type === 'signin' })}
-        >
-          Sign In
-        </h3>
-        <h3
-          onClick={() => {
-            setType('signup');
-          }}
-          className={classNames({ active: type === 'signup' })}
-        >
-          Sign Up
-        </h3>
+        <div className="signin-tab">
+          <h3
+            onClick={() => {
+              setType('signin');
+            }}
+            className={classNames({ active: type === 'signin' })}
+          >
+            Sign In
+          </h3>
+        </div>
+        <div className="signup-tab">
+          <h3
+            onClick={() => {
+              setType('signup');
+            }}
+            className={classNames({ active: type === 'signup' })}
+          >
+            Sign Up
+          </h3>
+        </div>
       </div>
       <AuthForm
         username={username}
