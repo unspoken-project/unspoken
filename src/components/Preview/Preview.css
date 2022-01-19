@@ -1,10 +1,9 @@
 .preview-card-container {
   display: flex;
   flex-direction: column;
-  border: 5px solid var(--color-5);
-  border-radius: 1rem;
+  border-radius: 3rem;
   margin: 10px;
-  background-color: var(--color-3);
+  background-color: rgba(242, 233, 228, 0.3);
   width: 50vw;
   align-items: center;
 }
@@ -18,9 +17,10 @@
 
 .title {
   font-size: 3rem;
-  font-family: 'Gamja Flower', sans-serif;
+  font-family: 'indie flower', sans-serif;
   font-weight: 400;
   font-display: swap;
+  color: var(--color-5);
 }
 
 .content {
@@ -28,10 +28,11 @@
   margin: 2rem;
   border-radius: 1rem;
   font-family: 'roboto mono', sans-serif;
-  background-color: var(--color-4);
+  background-color: #7e737c;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
-  height: 10px;
+  max-width: 40vw;
 }
 .click-post {
   color: black;
