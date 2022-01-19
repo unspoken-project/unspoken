@@ -18,7 +18,7 @@ export default function Auth({ setCurrentUser }) {
     try {
       const resp =
         type === 'signin'
-          ? await signInUser(username, email, password)
+          ? await signInUser(email, password)
           : await signUpUser(username, email, password);
       setCurrentUser(resp);
       history.push('/posts');
@@ -59,6 +59,7 @@ export default function Auth({ setCurrentUser }) {
         password={password}
         setPassword={setPassword}
         handleSubmit={handleSubmit}
+        type={type}
       />
     </div>
   );

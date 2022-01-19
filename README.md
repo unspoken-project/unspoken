@@ -20,23 +20,22 @@
 ## Views
 
 - [x] Auth.js (sign in/sign up)
-- [ ] Title.js
-- [ ] Posts.js
-- [ ] Post.js
-- [ ] Edit.js
-- [ ] Create.js
-- [ ] About.js
+- [x] Title.js
+- [x] Posts.js
+- [x] Post.js
+- [x] Edit.js
+- [x] Create.js
+- [x] About.js
 
 ## Components
 
 - [x] AuthForm.js
-- [ ] Preview.js (with title and previews)
-- [ ] PostList.js
-- [ ] PostDetail.js
-- [ ] PostForm.js (for both Edit and Create)
+- [x] Preview.js (with title and previews)
+- [x] PostList.js
+- [ x] PostForm.js (for both Edit and Create)
 
 ## Services
 
 - [x] client.js
-- [ ] posts.js
-- [ ] users.js
+- [x] posts.js
+- [x] users.js
