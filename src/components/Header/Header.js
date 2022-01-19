@@ -12,7 +12,6 @@ export default function Header({ currentUser }) {
 
   return (
     <div>
-      {/* <h3>Hello {currentUser.email}</h3> */}
       <header>
         <button className="create-button" onClick={handleSubmit}>
           Create Post
