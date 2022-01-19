@@ -1,9 +1,10 @@
 import React from 'react';
+import './PostForm.css';
 
 export default function PostForm({ handleSubmit, updatePost, post }) {
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="post-form">
+      <form className="post-form" onSubmit={handleSubmit}>
         <label>Title</label>
         <input
           placeholder="title"
@@ -12,8 +13,8 @@ export default function PostForm({ handleSubmit, updatePost, post }) {
           type="text"
           onInput={(e) => updatePost('post_title', e.target.value)}
         />
-        <label>Content</label>
-        <input
+        <label>Tell Us More...</label>
+        <textarea
           placeholder="content"
           value={post.post_content}
           name="content"
