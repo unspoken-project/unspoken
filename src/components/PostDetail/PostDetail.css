@@ -1,0 +1,14 @@
+.post-details {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 800px;
+  background-color: darkgray;
+}
+
+.buttons {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  width: 600px;
+}
