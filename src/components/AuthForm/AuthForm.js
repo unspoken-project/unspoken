@@ -1,4 +1,5 @@
 import React from 'react';
+import './AuthForm.css';
 
 export default function AuthForm({
   username,
@@ -23,7 +24,7 @@ export default function AuthForm({
         <label>Username: </label>
         <input type="username" value={username} onChange={(e) => setUsername(e.target.value)} />
 
-        <input type="submit" />
+        <input type="submit" className="submit-btn" />
       </form>
     </div>
   );
