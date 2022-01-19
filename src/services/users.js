@@ -2,12 +2,14 @@ import { checkError, client } from './client';
 
 export async function getUser() {
   const session = client.auth.session();
+  if (!session) {
+    return null;
+  }
   const { data, error } = await client
     .from('profiles')
     .select('*')
     .match({ id: session.user.id })
     .single();
-
   if (error) {
     throw error;
   }
