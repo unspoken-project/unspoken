@@ -31,6 +31,13 @@
   width: fit-content;
 }
 
-.user-info input {
-  size: 0.2 rem;
+
+.logout-link {
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.logout-link:hover {
+  text-decoration: underline 3px black;
+  width: fit-content;
 }

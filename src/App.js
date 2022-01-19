@@ -10,6 +10,7 @@ import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import Header from './components/Header/Header';
 import Auth from './views/Auth/Auth';
+import { AudioPlayer } from './components/Audio/AudioPlayer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -29,27 +30,30 @@ function App() {
   // }
 
   return (
-    <BrowserRouter>
-      <Header currentUser={currentUser} />
-      <Switch>
-        <Route exact path="/">
-          {currentUser && <Title setCurrentUser={setCurrentUser} />}
-          {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
-        </Route>
-        <ProtectedRoute currentUser={currentUser} exact path="/posts">
-          <Posts currentUser={currentUser} />
-        </ProtectedRoute>
-        <ProtectedRoute currentUser={currentUser} exact path="/posts/:id/edit">
-          <Edit currentUser={currentUser} />
-        </ProtectedRoute>
-        <ProtectedRoute currentUser={currentUser} exact path="/create">
-          <Create currentUser={currentUser} />
-        </ProtectedRoute>
-        <ProtectedRoute currentUser={currentUser} exact path="/posts/:id">
-          <Post currentUser={currentUser} />
-        </ProtectedRoute>
-      </Switch>
-    </BrowserRouter>
+    <>
+      <AudioPlayer />
+      <BrowserRouter>
+        <Header currentUser={currentUser} />
+        <Switch>
+          <Route exact path="/">
+            {currentUser && <Title setCurrentUser={setCurrentUser} />}
+            {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
+          </Route>
+          <ProtectedRoute currentUser={currentUser} exact path="/posts">
+            <Posts currentUser={currentUser} />
+          </ProtectedRoute>
+          <ProtectedRoute currentUser={currentUser} exact path="/posts/:id/edit">
+            <Edit currentUser={currentUser} />
+          </ProtectedRoute>
+          <ProtectedRoute currentUser={currentUser} exact path="/create">
+            <Create currentUser={currentUser} />
+          </ProtectedRoute>
+          <ProtectedRoute currentUser={currentUser} exact path="/posts/:id">
+            <Post currentUser={currentUser} />
+          </ProtectedRoute>
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 }
 
