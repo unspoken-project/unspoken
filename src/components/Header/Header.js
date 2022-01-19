@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Header({ currentUser }) {
+export default function Header() {
   return (
     <div>
-      <h3>Hello {currentUser.email}</h3>
+      <h3>Hello</h3>
     </div>
   );
 }
