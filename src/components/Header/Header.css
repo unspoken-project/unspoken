@@ -15,6 +15,25 @@
   justify-content: space-between;
 }
 
+.home-link {
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.home-link:hover {
+  text-decoration: underline 2px black;
+  width: fit-content;
+}
+
+.login-link {
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.login-link:hover {
+  text-decoration: underline 2px black;
+  width: fit-content;
+}
 
 .logout-link {
   text-decoration: none;
@@ -22,6 +41,6 @@
 }
 
 .logout-link:hover {
-  text-decoration: underline 3px black;
+  text-decoration: underline 2px black;
   width: fit-content;
 }
