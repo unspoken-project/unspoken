@@ -30,3 +30,7 @@
   text-decoration: underline 3px black;
   width: fit-content;
 }
+
+.user-info input {
+  size: 0.2 rem;
+}
