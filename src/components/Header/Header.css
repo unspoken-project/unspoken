@@ -1,0 +1,32 @@
+.create-button {
+  position: fixed;
+  right: 150px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+}
+.header-links > div {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.home-link {
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.home-link:hover {
+  text-decoration: underline 3px black;
+  width: fit-content;
+}
+
+.login-link {
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline 3px black;
+  width: fit-content;
+}
