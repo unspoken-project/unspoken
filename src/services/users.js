@@ -40,7 +40,7 @@ export async function signInUser(email, password) {
   return user;
 }
 
-export async function signOut() {
+export async function logout() {
   const resp = await client.auth.signOut();
   return checkError(resp);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
+import { logout } from '../../services/users';
 import './Header.css';
 
 export default function Header() {
@@ -10,6 +11,11 @@ export default function Header() {
     history.push(`/create`);
   };
 
+  const handleLogout = async (e) => {
+    e.preventDefault();
+    await logout();
+    history.push(`/`);
+  };
 
   return (
     <div>
@@ -20,12 +26,15 @@ export default function Header() {
         <div className="header-links">
           <div>
             <NavLink className="home-link" to="/posts">
-              {' '}
-              Home{' '}
+              Home
             </NavLink>
+
             <NavLink className="login-link" to="/">
-              {' '}
-              Login/Sign-Up{' '}
+              Login/Sign-Up
+            </NavLink>
+
+            <NavLink onClick={handleLogout} className="logout-link" to="/">
+              Logout
             </NavLink>
           </div>
         </div>
