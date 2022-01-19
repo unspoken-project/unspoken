@@ -1,0 +1,35 @@
+.preview-card-container {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--color-5);
+  border-radius: 1rem;
+  margin: 10px;
+  background-color: var(--color-3);
+  width: 50vw;
+  align-items: center;
+}
+.preview-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: 'Gamja Flower', sans-serif;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.content {
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  font-family: 'roboto mono', sans-serif;
+  background-color: var(--color-4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 10px;
+}
