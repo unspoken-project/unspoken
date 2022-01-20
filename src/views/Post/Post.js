@@ -1,14 +1,15 @@
 import React from 'react';
-import { deletePost, getPostById } from '../../services/posts';
+import { deletePost, getPostById, getUserPost } from '../../services/posts';
 import { useEffect, useState } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import PostDetail from '../../components/PostDetail/PostDetail';
 
-export default function Post() {
+export default function Post({ currentUser }) {
   const [post, setPost] = useState({});
   const [loading, setLoading] = useState(true);
   const params = useParams();
   const history = useHistory();
+  // const [userPost, setUserPost] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +32,7 @@ export default function Post() {
 
   return (
     <div>
-      <PostDetail post={post} handleDelete={handleDelete} />
+      <PostDetail post={post} handleDelete={handleDelete} currentUser={currentUser} />
     </div>
   );
 }
