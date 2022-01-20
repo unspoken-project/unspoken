@@ -10,6 +10,7 @@ import Post from './views/Post/Post';
 import Header from './components/Header/Header';
 import AudioPlayer from './components/Audio/AudioPlayer';
 import Title from './views/Title/Title';
+import About from './views/About/About';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -43,6 +44,9 @@ function App() {
           <ProtectedRoute currentUser={currentUser} exact path="/posts/:id">
             <Post currentUser={currentUser} />
           </ProtectedRoute>
+          <Route exact path="/about">
+            <About />
+          </Route>
         </Switch>
       </BrowserRouter>
       <AudioPlayer />

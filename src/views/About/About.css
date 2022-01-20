@@ -1,0 +1,38 @@
+.about-cards {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.ryssa-card {
+  background-color: var(--color-4);
+  width: 400px;
+  height: 400px;
+  border-radius: 1rem;
+}
+.ian-card {
+  background-color: var(--color-4);
+  width: 400px;
+  height: 400px;
+  border-radius: 1rem;
+}
+.mira-card {
+  background-color: var(--color-4);
+  width: 400px;
+  height: 400px;
+  border-radius: 1rem;
+}
+.indy-card {
+  background-color: var(--color-4);
+  width: 400px;
+  height: 400px;
+  border-radius: 1rem;
+}
