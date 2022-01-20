@@ -25,9 +25,9 @@ export default function Header({ currentUser, setCurrentUser }) {
           <div className="header-links">
             {currentUser && (
               <>
-                <div>
-                  <h2>Hello {currentUser.username}</h2>
+                <div className="welcome">
                   <Avatar currentUser={currentUser} />
+                  <h2>Hello {currentUser.username}</h2>
                 </div>
 
                 <div className="links">

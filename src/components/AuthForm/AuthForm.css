@@ -3,28 +3,29 @@
   flex-direction: column;
   margin: auto;
   margin-top: 3rem;
-  background-color: cadetblue;
-  width: fit-content;
-  padding: 1rem;
+  background-color: rgba(242, 233, 228, 0.4);
+  width: 500px;
+  padding: 20px;
   border-radius: 1rem;
 }
 
-input {
-  padding: 0.25rem;
-  margin: 1rem;
+.auth-form input {
   border-radius: 1rem;
   font-size: 2rem;
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  opacity: 0.5;
 }
 
 .submit-btn {
-  font-family: 'Gamja Flower';
+  font-family: 'indie flower';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  border: 0;
+  opacity: 0.5;
 }
 
 .error-message {

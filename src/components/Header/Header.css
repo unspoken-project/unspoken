@@ -1,8 +1,27 @@
 .header-links {
-  margin: 10px;
+  margin: 20px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+}
+
+.welcome {
+  display: flex;
+}
+
+.welcome img {
+  margin-right: 10px;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+}
+
+.header-links h2 {
+  font-size: 2rem;
+  font-family: 'indie flower', sans-serif;
+  font-weight: 400;
+  font-display: swap;
+  color: var(--color-5);
 }
 
 a {
@@ -28,11 +47,12 @@ a {
   text-decoration: none;
   margin-left: 50px;
   transition: 0.45s;
+  padding: 16px 32px;
 }
 
 .home-link:hover {
   background-color: var(--color-4);
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   border-radius: 1.5rem;
   cursor: pointer;
 }
@@ -46,6 +66,7 @@ a {
   background-color: transparent;
   border: transparent;
   transition: 0.45s;
+  padding: 16px 32px;
 }
 
 .logout-btn:hover {
@@ -62,6 +83,7 @@ a {
   background-color: transparent;
   border: transparent;
   margin-left: 50px;
+  padding: 16px 32px;
   transition: 0.45s;
 }
 
