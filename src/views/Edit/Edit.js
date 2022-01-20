@@ -5,7 +5,7 @@ import { editPost, getPostById } from '../../services/posts';
 import PostForm from '../../components/PostForm/PostForm';
 import { useHistory } from 'react-router-dom';
 
-export default function Edit({ currentUser }) {
+export default function Edit() {
   const [post, setPost] = useState({});
   const [loading, setLoading] = useState(true);
   const params = useParams();
