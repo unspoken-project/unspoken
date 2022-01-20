@@ -4,8 +4,8 @@ import './Title.css';
 
 export default function Title({ setCurrentUser }) {
   return (
-    <div>
-      <h1>Unspoken Words</h1>
+    <div className="title-container">
+      <img src="https://ipvfiyhmiwmzfnzlbhov.supabase.in/storage/v1/object/public/unspoken/unspoken_stories_header.png" />
       <Auth setCurrentUser={setCurrentUser} />
     </div>
   );

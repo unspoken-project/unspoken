@@ -20,26 +20,27 @@
   font-family: 'indie flower', sans-serif;
   font-weight: 400;
   font-display: swap;
-  color: var(--color-5);
+  /* color: var(--color-5); */
 }
 
 .content {
   padding: 3rem;
-  margin: 2rem;
-  border-radius: 1rem;
+  margin: 3px auto 30px auto;
+  border-radius: 3rem;
   font-family: 'roboto mono', sans-serif;
   background-color: #7e737c;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 40vw;
+  width: 35vw;
+  text-align: center;
 }
 .click-post {
-  color: black;
+  color: #fefefe;
   text-decoration: none;
 }
 
 .click-post:hover {
-  text-decoration: underline 4px black;
+  color: blanchedalmond;
   width: fit-content;
 }
