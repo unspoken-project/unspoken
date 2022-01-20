@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { uploadAvatar } from '../../services/avatars';
 import { logout } from '../../services/users';
+import Avatar from '../Avatar/Avatar';
 import './Header.css';
 
 export default function Header({ currentUser }) {
@@ -17,10 +18,6 @@ export default function Header({ currentUser }) {
     history.push('/');
   };
 
-  const uploadFile = (e) => {
-    uploadAvatar(currentUser.id, e.target.files[0]);
-  };
-
   return (
     <div>
       <header>
@@ -30,10 +27,7 @@ export default function Header({ currentUser }) {
               <>
                 <div>
                   <h2>Hello {currentUser.username}</h2>
-                  <h2>
-                    {currentUser.avatar && <img className="avatar" src={currentUser.avatar} />}
-                  </h2>
-                  <input type="file" onChange={uploadFile} className="button" />
+                  <Avatar currentUser={currentUser} />
                 </div>
 
                 <div className="links">
