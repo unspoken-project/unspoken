@@ -9,7 +9,7 @@ import Edit from './views/Edit/Edit';
 import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import Header from './components/Header/Header';
-// import Auth from './views/Auth/Auth';
+import Auth from './views/Auth/Auth';
 import { AudioPlayer } from './components/Audio/AudioPlayer';
 
 function App() {
