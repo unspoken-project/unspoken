@@ -9,7 +9,7 @@ import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import Header from './components/Header/Header';
 import Auth from './views/Auth/Auth';
-import { AudioPlayer } from './components/Audio/AudioPlayer';
+import AudioPlayer from './components/Audio/AudioPlayer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -24,12 +24,11 @@ function App() {
 
   return (
     <>
-      <AudioPlayer />
       <BrowserRouter>
         <Header currentUser={currentUser} />
         <Switch>
           <Route exact path="/">
-            <Auth setCurrentUser={setCurrentUser} />
+            <Title setCurrentUser={setCurrentUser} />
           </Route>
           <ProtectedRoute currentUser={currentUser} exact path="/posts">
             <Posts currentUser={currentUser} />
@@ -45,6 +44,7 @@ function App() {
           </ProtectedRoute>
         </Switch>
       </BrowserRouter>
+      <AudioPlayer />
     </>
   );
 }
