@@ -19,34 +19,28 @@ export default function Header({ currentUser, setCurrentUser }) {
   };
 
   return (
-    <div>
-      <header>
-        <div className="user-info">
-          <div className="header-links">
-            {currentUser && (
-              <>
-                <div className="welcome">
-                  <Avatar currentUser={currentUser} />
-                  <h2>Hello {currentUser.username}</h2>
-                </div>
+    <header>
+      {currentUser && (
+        <>
+          <span className="user-info">
+            <Avatar currentUser={currentUser} />
+            <h2>Hello, {currentUser.username}!</h2>
+          </span>
 
-                <div className="links">
-                  <button className="create-btn" onClick={handleSubmit}>
-                    Create Post
-                  </button>
-                  <button onClick={handleLogout} className="logout-btn">
-                    Logout
-                  </button>
+          <span>
+            <button onClick={handleSubmit} className="header-button">
+              Create Post
+            </button>
+            <button onClick={handleLogout} className="header-button">
+              Logout
+            </button>
 
-                  <NavLink className="home-link" to="/posts">
-                    Home
-                  </NavLink>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-      </header>
-    </div>
+            <NavLink to="/posts" className="header-button">
+              Home
+            </NavLink>
+          </span>
+        </>
+      )}
+    </header>
   );
 }

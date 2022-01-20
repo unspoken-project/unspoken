@@ -14,8 +14,8 @@ export default function AuthForm({
 }) {
   return (
     <>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
       <form className="auth-form" onSubmit={handleSubmit}>
+        {errorMessage && <p>{errorMessage}</p>}
         {type === 'signup' && (
           <div>
             <label>Username: </label>

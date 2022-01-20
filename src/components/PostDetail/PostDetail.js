@@ -5,19 +5,21 @@ import './PostDetail.css';
 export default function PostDetail({ post, handleDelete, currentUser }) {
   return (
     <>
-      <div className="post-details">
+      <div className="post">
         <h1>{post.post_title}</h1>
-        <p>{post.post_content}</p>
-        <p>{post.date}</p>
-        <div className="content">{post.post_content}</div>
+        <span className="post-content">{post.post_content}</span>
+        <p>WRITTEN ON {post.date}</p>
       </div>
       {post.user_id === currentUser.id && (
-        <div className="post-buttons">
+        <div className="post-buttons-container">
           <button>
-            <Link to={`/posts/${post.id}/edit`}>Edit</Link>
+            <Link to={`/posts/${post.id}/edit`} className="post-button">
+              Edit
+            </Link>
           </button>
-
-          <button onClick={handleDelete}> Delete Post</button>
+          <button onClick={handleDelete} className="post-button">
+            Delete Post
+          </button>
         </div>
       )}
     </>

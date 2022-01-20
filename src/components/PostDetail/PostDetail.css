@@ -1,4 +1,4 @@
-.post-details {
+.post {
   display: flex;
   flex-direction: column;
   border-radius: 3rem;
@@ -8,16 +8,51 @@
   align-items: center;
 }
 
-.post-details h1 {
+.post h1 {
   font-size: 3rem;
   font-family: 'indie flower', sans-serif;
   font-weight: 400;
   color: #fefefe;
+  margin: 0;
 }
 
-.post-buttons {
+.post p {
+  color: white;
+}
+
+.post-content {
+  padding: 3rem;
+  margin: 3px auto 10px auto;
+  border-radius: 3rem;
+  font-family: 'roboto mono', sans-serif;
+  background-color: rgb(255, 255, 255, 0.5);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 35vw;
+  text-align: center;
+}
+
+.post-buttons-container {
   display: flex;
-  margin: 10px auto;
+  margin: 20px auto;
   justify-content: center;
   width: 600px;
+}
+
+.post-button {
+  font-size: 1.5rem;
+  color: var(--color-5);
+  align-self: center;
+  text-decoration: none;
+  margin-left: 50px;
+  transition: 0.45s;
+  padding: 16px 32px;
+  background-color: transparent;
+}
+
+.post-button:hover {
+  background-color: var(--color-4);
+  border-radius: 1.5rem;
+  cursor: pointer;
 }

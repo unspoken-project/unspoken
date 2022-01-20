@@ -1,8 +1,20 @@
 .post-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  border-radius: 3rem;
   margin: auto;
+  background-color: rgba(242, 233, 228, 0.2);
+  width: 50vw;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.post-form h1 {
+  font-size: 3rem;
+  font-family: 'indie flower', sans-serif;
+  font-weight: 400;
+  color: #fefefe;
+  margin: 0;
 }
 
 textarea {
@@ -11,11 +23,29 @@ textarea {
   height: 100px;
   resize: vertical;
   font-size: 1.5rem;
+  width: 35vw;
+  border-radius: 1.5rem;
+  border: 0;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: rgba(242, 233, 228, 0.5);
 }
 
+textarea::placeholder {
+  color: rgb(34, 34, 34);
+}
 input {
   width: 500px;
   margin: 10px;
+  width: 35vw;
+  border-radius: 3rem;
+  padding: 10px;
+  border: 0;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+input::placeholder {
+  color: rgb(61, 61, 61);
 }
 
 label {
