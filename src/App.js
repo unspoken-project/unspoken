@@ -36,8 +36,9 @@ function App() {
         <Header currentUser={currentUser} />
         <Switch>
           <Route exact path="/">
-            {currentUser && <Posts setCurrentUser={setCurrentUser} />}
-            {!currentUser && <Title setCurrentUser={setCurrentUser} />}
+            {/* {currentUser && <Posts setCurrentUser={setCurrentUser} />}
+            {!currentUser && <Auth setCurrentUser={setCurrentUser} />} */}
+            <Auth setCurrentUser={setCurrentUser} />
           </Route>
           <ProtectedRoute currentUser={currentUser} exact path="/posts">
             <Posts currentUser={currentUser} />
