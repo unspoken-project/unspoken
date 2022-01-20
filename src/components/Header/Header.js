@@ -27,32 +27,29 @@ export default function Header({ currentUser }) {
         <div className="user-info">
           <div className="header-links">
             {currentUser && (
-              <div>
-                <h2>Hello {currentUser.username}</h2>
-                <h2>{currentUser.avatar && <img className="avatar" src={currentUser.avatar} />}</h2>
-                <input type="file" onChange={uploadFile} className="button" />
-              </div>
-            )}
-          </div>
-          {currentUser && (
-            <button className="create-button" onClick={handleSubmit}>
-              Create Post
-            </button>
-          )}
-          <div>
-            {currentUser && (
-              <NavLink className="home-link" to="/posts">
-                Home
-              </NavLink>
-            )}
+              <>
+                <div>
+                  <h2>Hello {currentUser.username}</h2>
+                  <h2>
+                    {currentUser.avatar && <img className="avatar" src={currentUser.avatar} />}
+                  </h2>
+                  <input type="file" onChange={uploadFile} className="button" />
+                </div>
 
-            <NavLink className="login-link" to="/">
-              Login/Sign-Up
-            </NavLink>
+                <div className="links">
+                  <button className="create-btn" onClick={handleSubmit}>
+                    Create Post
+                  </button>
+                  <button onClick={handleLogout} className="logout-btn">
+                    Logout
+                  </button>
 
-            <button onClick={handleLogout} className="logout-link">
-              Logout
-            </button>
+                  <NavLink className="home-link" to="/posts">
+                    Home
+                  </NavLink>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </header>
