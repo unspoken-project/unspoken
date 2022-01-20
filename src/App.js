@@ -8,9 +8,8 @@ import Edit from './views/Edit/Edit';
 import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import Header from './components/Header/Header';
-// import Auth from './views/Auth/Auth';
+import AudioPlayer from './components/Audio/AudioPlayer';
 import Title from './views/Title/Title';
-import { AudioPlayer } from './components/Audio/AudioPlayer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -25,7 +24,6 @@ function App() {
 
   return (
     <>
-      <AudioPlayer />
       <BrowserRouter>
         <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <Switch>
@@ -47,6 +45,7 @@ function App() {
           </ProtectedRoute>
         </Switch>
       </BrowserRouter>
+      <AudioPlayer />
     </>
   );
 }

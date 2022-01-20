@@ -28,4 +28,5 @@ h3:hover {
   background-color: var(--color-4);
   padding: 16px 32px;
   border-radius: 1.5rem;
+  cursor: pointer;
 }
