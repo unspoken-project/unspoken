@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import { getUser } from './services/users';
 import ProtectedRoute from './utils/utils';
 import Posts from './views/Posts/Posts';
-// import Title from './views/Title/Title';
+import Title from './views/Title/Title';
 import Edit from './views/Edit/Edit';
 import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import Header from './components/Header/Header';
-import Auth from './views/Auth/Auth';
+// import Auth from './views/Auth/Auth';
 import { AudioPlayer } from './components/Audio/AudioPlayer';
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             {currentUser && <Posts setCurrentUser={setCurrentUser} />}
-            {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
+            {!currentUser && <Title setCurrentUser={setCurrentUser} />}
           </Route>
           <ProtectedRoute currentUser={currentUser} exact path="/posts">
             <Posts currentUser={currentUser} />
