@@ -23,7 +23,7 @@ export default function Header({ currentUser, setCurrentUser }) {
       {currentUser && (
         <>
           <span className="user-info">
-            <Avatar currentUser={currentUser} />
+            <Avatar currentUser={currentUser} setCurrentUser={setCurrentUser} />
             <h2>Hello, {currentUser.username}!</h2>
           </span>
 
