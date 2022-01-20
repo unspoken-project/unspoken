@@ -9,6 +9,7 @@ import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import AudioPlayer from './components/Audio/AudioPlayer';
 import Title from './views/Title/Title';
+import About from './views/About/About';
 import Header from './components/Header/Header';
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
           <ProtectedRoute currentUser={currentUser} exact path="/posts/:id">
             <Post currentUser={currentUser} />
           </ProtectedRoute>
+          <Route exact path="/about">
+            <About />
+          </Route>
         </Switch>
       </BrowserRouter>
       <AudioPlayer />
