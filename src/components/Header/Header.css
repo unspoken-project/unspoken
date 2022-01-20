@@ -5,8 +5,9 @@
   text-decoration: none;
 }
 
-.header-links a {
-  font-size: 2rem;
+a {
+  font-size: 1.5rem;
+  color: white;
 }
 
 .header-links span {
@@ -15,32 +16,53 @@
   justify-content: space-between;
 }
 
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
 .home-link {
+  font-size: 1.5rem;
+  color: white;
+  align-self: center;
   text-decoration: none;
   margin-left: 50px;
+  transition: 0.45s;
 }
 
 .home-link:hover {
-  text-decoration: underline 2px black;
-  width: fit-content;
+  background-color: var(--color-4);
+  padding: 16px 32px;
+  border-radius: 1.5rem;
 }
 
-.login-link {
+.logout-btn {
+  align-self: center;
+  font-size: 1.5rem;
   text-decoration: none;
   margin-left: 50px;
+  background-color: transparent;
+  border: transparent;
+  transition: 0.45s;
 }
 
-.login-link:hover {
-  text-decoration: underline 2px black;
-  width: fit-content;
+.logout-btn:hover {
+  background-color: var(--color-4);
+  padding: 16px 32px;
+  border-radius: 1.5rem;
 }
 
-.logout-link {
-  text-decoration: none;
+.create-btn {
+  align-self: center;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: transparent;
   margin-left: 50px;
+  transition: 0.45s;
 }
 
-.logout-link:hover {
-  text-decoration: underline 2px black;
-  width: fit-content;
+.create-btn:hover {
+  background-color: var(--color-4);
+  padding: 16px 32px;
+  border-radius: 1.5rem;
 }
