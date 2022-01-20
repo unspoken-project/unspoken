@@ -2,7 +2,6 @@ import { checkError, client } from './client';
 
 export async function uploadAvatar(userId, file) {
   const ext = file.name.split('.').pop();
-  console.log(ext);
   await client.storage
     .from('profile-images')
     .upload(`avatars/${userId}.${ext}`, file, { upsert: true });
