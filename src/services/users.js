@@ -27,7 +27,7 @@ export async function signUpUser(username, email, password) {
   if (resp.error) {
     throw error;
   }
-  return user;
+  return { ...user, ...resp.data };
 }
 
 export async function signInUser(email, password) {
@@ -36,7 +36,9 @@ export async function signInUser(email, password) {
   if (error) {
     throw error;
   }
-  return user;
+  const resp = await client.from('profiles').select().match({ id: user.id }).single();
+
+  return { ...user, ...resp.data };
 }
 
 export async function logout() {

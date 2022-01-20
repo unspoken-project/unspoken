@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Preview from '../../components/Preview/Preview';
 import { getPosts } from '../../services/posts';
 import './Posts.css';
-import Header from '../../components/Header/Header';
 
-export default function Posts({ currentUser, setCurrentUser }) {
+export default function Posts() {
   const [posts, setPosts] = useState([]);
   const [loading2, setLoading2] = useState(true);
   const [page, setPage] = useState(1);

@@ -1,11 +1,15 @@
 import React from 'react';
 import { uploadAvatar } from '../../services/avatars';
+import { getUser } from '../../services/users';
 import './Avatar.css';
 
-export default function Avatar({ currentUser }) {
-  const uploadFile = (e) => {
-    uploadAvatar(currentUser.id, e.target.files[0]);
+export default function Avatar({ currentUser, setCurrentUser }) {
+  const uploadFile = async (e) => {
+    await uploadAvatar(currentUser.id, e.target.files[0]);
+    const user = await getUser();
+    setCurrentUser(user);
   };
+
   return (
     <>
       <h2>{currentUser.avatar && <img className="avatar" src={currentUser.avatar} />}</h2>
