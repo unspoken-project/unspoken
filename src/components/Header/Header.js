@@ -22,12 +22,12 @@ export default function Header({ currentUser, setCurrentUser }) {
     <header>
       {currentUser && (
         <>
-          <div className="user-info">
+          <span className="user-info">
             <Avatar currentUser={currentUser} />
             <h2>Hello, {currentUser.username}!</h2>
-          </div>
+          </span>
 
-          <div>
+          <span>
             <button onClick={handleSubmit} className="header-button">
               Create Post
             </button>
@@ -38,7 +38,7 @@ export default function Header({ currentUser, setCurrentUser }) {
             <NavLink to="/posts" className="header-button">
               Home
             </NavLink>
-          </div>
+          </span>
         </>
       )}
     </header>

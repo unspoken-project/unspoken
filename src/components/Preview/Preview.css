@@ -28,13 +28,14 @@
   margin: 3px auto 30px auto;
   border-radius: 3rem;
   font-family: 'roboto mono', sans-serif;
-  background-color: #7e737c;
+  background-color: rgb(255, 255, 255, 0.5);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 35vw;
   text-align: center;
 }
+
 .click-post {
   color: #fefefe;
   text-decoration: none;
