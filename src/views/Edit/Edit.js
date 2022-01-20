@@ -5,7 +5,7 @@ import { editPost, getPostById } from '../../services/posts';
 import PostForm from '../../components/PostForm/PostForm';
 import { useHistory } from 'react-router-dom';
 
-export default function Edit() {
+export default function Edit({ currentUser }) {
   const [post, setPost] = useState({});
   const [loading, setLoading] = useState(true);
   const params = useParams();
@@ -48,6 +48,7 @@ export default function Edit() {
         updatePost={updatePost}
         message={message}
       />
+      )
     </div>
   );
 }
