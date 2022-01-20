@@ -25,13 +25,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header currentUser={currentUser} />
+        <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <Switch>
           <Route exact path="/">
-            <Title setCurrentUser={setCurrentUser} />
+            {currentUser && <Posts setCurrentUser={setCurrentUser} />}
+            {!currentUser && <Title setCurrentUser={setCurrentUser} />}
           </Route>
           <ProtectedRoute currentUser={currentUser} exact path="/posts">
-            <Posts currentUser={currentUser} />
+            <Posts currentUser={currentUser} setCurrentUser={setCurrentUser} />
           </ProtectedRoute>
           <ProtectedRoute currentUser={currentUser} exact path="/posts/:id/edit">
             <Edit currentUser={currentUser} />

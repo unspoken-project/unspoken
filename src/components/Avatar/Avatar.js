@@ -9,7 +9,9 @@ export default function Avatar({ currentUser }) {
   return (
     <div>
       <h2>{currentUser.avatar && <img className="avatar" src={currentUser.avatar} />}</h2>
-      {!currentUser.avatar && <input type="file" onChange={uploadFile} className="file-button" />}
+      <h2>
+        {!currentUser.avatar && <input type="file" onChange={uploadFile} className="file-button" />}
+      </h2>
     </div>
   );
 }

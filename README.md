@@ -15,7 +15,7 @@
 
 ## Utils
 
-- [ ] protected route function
+- [x] protected route function
 
 ## Views
 
