@@ -34,7 +34,6 @@ export default function Posts({ currentUser, setCurrentUser }) {
 
   return (
     <>
-      <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <div className="post-list">
         {posts.map((item) => (
           <Preview key={item.id} {...item} />

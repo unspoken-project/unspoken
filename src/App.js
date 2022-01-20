@@ -9,6 +9,7 @@ import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import AudioPlayer from './components/Audio/AudioPlayer';
 import Title from './views/Title/Title';
+import Header from './components/Header/Header';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -30,6 +31,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <Switch>
           <Route exact path="/">
             {currentUser && <Posts setCurrentUser={setCurrentUser} currentUser={currentUser} />}
