@@ -13,7 +13,6 @@ export default function AudioPlayer() {
           <code>audio</code> element.
         </audio>
       </div>
-      ;
     </>
   );
 }
