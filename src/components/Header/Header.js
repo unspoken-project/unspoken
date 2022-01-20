@@ -12,10 +12,9 @@ export default function Header({ currentUser }) {
     history.push(`/create`);
   };
 
-  const handleLogout = async (e) => {
-    e.preventDefault();
+  const handleLogout = async () => {
     await logout();
-    history.push(`/`);
+    history.push('/');
   };
 
   const uploadFile = (e) => {
@@ -51,9 +50,9 @@ export default function Header({ currentUser }) {
               Login/Sign-Up
             </NavLink>
 
-            <NavLink onClick={handleLogout} className="logout-link" to="/">
+            <button onClick={handleLogout} className="logout-link">
               Logout
-            </NavLink>
+            </button>
           </div>
         </div>
       </header>
