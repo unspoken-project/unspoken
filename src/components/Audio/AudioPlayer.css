@@ -1,15 +1,16 @@
 .audio-container {
+  display: flex;
   position: fixed;
-  left: 0;
+  justify-content: flex-end;
   bottom: 0;
-  width: 100%;
+  width: 95vw;
   color: white;
   text-align: center;
   padding: 10px;
 }
 
 audio {
-  opacity: 0.5;
+  opacity: 0.6;
   width: 200px;
   height: 30px;
 }

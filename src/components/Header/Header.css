@@ -1,48 +1,48 @@
-.header-links {
-  margin: 20px;
+header {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
+  padding: 10px;
 }
 
-.welcome {
-  display: flex;
-}
-
-.welcome img {
-  margin-right: 10px;
-  border-radius: 100%;
-  width: 70px;
-  height: 70px;
-}
-
-.header-links h2 {
+header h2 {
   font-size: 2rem;
   font-family: 'indie flower', sans-serif;
   font-weight: 400;
   font-display: swap;
   color: var(--color-5);
+  margin: 0;
 }
 
-a {
+.header-button {
   font-size: 1.5rem;
-  color: white;
+  color: var(--color-5);
+  align-self: center;
+  text-decoration: none;
+  margin-left: 50px;
+  transition: 0.45s;
+  padding: 16px 32px;
+  background-color: transparent;
 }
 
-.header-links span {
-  display: flex;
-  width: 250px;
-  justify-content: space-between;
+.header-button:hover {
+  background-color: var(--color-4);
+  border-radius: 1.5rem;
+  cursor: pointer;
 }
 
-.links {
+.user-info {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .home-link {
   font-size: 1.5rem;
-  color: white;
+  color: var(--color-5);
   align-self: center;
   text-decoration: none;
   margin-left: 50px;
@@ -52,44 +52,6 @@ a {
 
 .home-link:hover {
   background-color: var(--color-4);
-  /* padding: 16px 32px; */
-  border-radius: 1.5rem;
-  cursor: pointer;
-}
-
-.logout-btn {
-  align-self: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  margin-left: 50px;
-  color: white;
-  background-color: transparent;
-  border: transparent;
-  transition: 0.45s;
-  padding: 16px 32px;
-}
-
-.logout-btn:hover {
-  background-color: var(--color-4);
-  padding: 16px 32px;
-  border-radius: 1.5rem;
-  cursor: pointer;
-}
-
-.create-btn {
-  align-self: center;
-  font-size: 1.5rem;
-  color: white;
-  background-color: transparent;
-  border: transparent;
-  margin-left: 50px;
-  padding: 16px 32px;
-  transition: 0.45s;
-}
-
-.create-btn:hover {
-  background-color: var(--color-4);
-  padding: 16px 32px;
   border-radius: 1.5rem;
   cursor: pointer;
 }
