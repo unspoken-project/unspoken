@@ -4,7 +4,9 @@
   text-align: center;
 }
 body {
-  background-image: url(https://external-preview.redd.it/mu1mjDw6HBsj5j4CFOy39wHLL90ZiWUYCTlXCJX6iyc.jpg?auto=webp&s=1b1754bbec2947304b4a0ab373bd4c4597b5767e);
+  background-image: url(https://64.media.tumblr.com/eaa24981489f93ee6ead9e2ad35cf304/b13097a12060ccf6-1c/s1280x1920/d34dd820e761d5fc72efcd7d31ae43eaddf646c5.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
