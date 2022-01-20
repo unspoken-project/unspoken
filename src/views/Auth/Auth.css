@@ -10,17 +10,22 @@
 }
 
 .auth-tabs h3 {
-  color: red;
+  font-size: 2rem;
+  color: white;
+  align-self: center;
+  text-decoration: none;
+  margin-left: 50px;
+  transition: 0.45s;
 }
 
 .auth-tabs h3.active {
-  color: blue;
-}
-h3 {
-  font-size: 2rem;
+  background-color: var(--color-4);
+  padding: 16px 32px;
+  border-radius: 1.5rem;
 }
 
 h3:hover {
-  text-decoration: underline 2px black;
-  width: fit-content;
+  background-color: var(--color-4);
+  padding: 16px 32px;
+  border-radius: 1.5rem;
 }
