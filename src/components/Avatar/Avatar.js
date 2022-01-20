@@ -1,5 +1,6 @@
 import React from 'react';
 import { uploadAvatar } from '../../services/avatars';
+import './Avatar.css';
 
 export default function Avatar({ currentUser }) {
   const uploadFile = (e) => {
@@ -8,7 +9,7 @@ export default function Avatar({ currentUser }) {
   return (
     <div>
       <h2>{currentUser.avatar && <img className="avatar" src={currentUser.avatar} />}</h2>
-      <input type="file" onChange={uploadFile} className="button" />
+      {!currentUser.avatar && <input type="file" onChange={uploadFile} className="file-button" />}
     </div>
   );
 }

@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { getUser } from './services/users';
 import ProtectedRoute from './utils/utils';
 import Posts from './views/Posts/Posts';
-import Title from './views/Title/Title';
 import Edit from './views/Edit/Edit';
 import Create from './views/Create/Create';
 import Post from './views/Post/Post';
