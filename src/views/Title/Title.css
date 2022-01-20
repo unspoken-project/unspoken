@@ -1,5 +1,6 @@
-h1 {
-  font-size: 4rem;
-  width: fit-content;
+.title-container {
+  display: flex;
   margin: auto;
+  flex-direction: column;
+  align-items: center;
 }

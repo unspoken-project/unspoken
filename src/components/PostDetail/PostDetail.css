@@ -1,9 +1,18 @@
 .post-details {
   display: flex;
   flex-direction: column;
+  border-radius: 3rem;
   margin: auto;
-  width: 800px;
-  background-color: darkgray;
+  background-color: rgba(242, 233, 228, 0.2);
+  width: 50vw;
+  align-items: center;
+}
+
+.post-details h1 {
+  font-size: 3rem;
+  font-family: 'indie flower', sans-serif;
+  font-weight: 400;
+  color: #fefefe;
 }
 
 .post-buttons {

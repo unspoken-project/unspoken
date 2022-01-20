@@ -9,6 +9,7 @@ export default function PostDetail({ post, handleDelete, currentUser }) {
         <h1>{post.post_title}</h1>
         <p>{post.post_content}</p>
         <p>{post.inserted_at}</p>
+        <div className="content">{post.post_content}</div>
       </div>
       {post.user_id === currentUser.id && (
         <div className="post-buttons">
