@@ -14,20 +14,14 @@ import { AudioPlayer } from './components/Audio/AudioPlayer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchUser = async () => {
       const user = await getUser();
       setCurrentUser(user);
-      setLoading(false);
     };
     fetchUser();
   }, []);
-
-  if (loading) {
-    return <h2>loading</h2>;
-  }
 
   return (
     <>
@@ -36,8 +30,6 @@ function App() {
         <Header currentUser={currentUser} />
         <Switch>
           <Route exact path="/">
-            {/* {currentUser && <Posts setCurrentUser={setCurrentUser} />}
-            {!currentUser && <Auth setCurrentUser={setCurrentUser} />} */}
             <Auth setCurrentUser={setCurrentUser} />
           </Route>
           <ProtectedRoute currentUser={currentUser} exact path="/posts">
