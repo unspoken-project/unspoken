@@ -8,7 +8,8 @@ import Edit from './views/Edit/Edit';
 import Create from './views/Create/Create';
 import Post from './views/Post/Post';
 import Header from './components/Header/Header';
-import Auth from './views/Auth/Auth';
+// import Auth from './views/Auth/Auth';
+import Title from './views/Title/Title';
 import { AudioPlayer } from './components/Audio/AudioPlayer';
 
 function App() {
@@ -26,13 +27,14 @@ function App() {
     <>
       <AudioPlayer />
       <BrowserRouter>
-        <Header currentUser={currentUser} />
+        <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <Switch>
           <Route exact path="/">
-            <Auth setCurrentUser={setCurrentUser} />
+            {currentUser && <Posts setCurrentUser={setCurrentUser} />}
+            {!currentUser && <Title setCurrentUser={setCurrentUser} />}
           </Route>
           <ProtectedRoute currentUser={currentUser} exact path="/posts">
-            <Posts currentUser={currentUser} />
+            <Posts currentUser={currentUser} setCurrentUser={setCurrentUser} />
           </ProtectedRoute>
           <ProtectedRoute currentUser={currentUser} exact path="/posts/:id/edit">
             <Edit currentUser={currentUser} />

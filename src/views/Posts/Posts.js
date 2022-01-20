@@ -3,7 +3,7 @@ import Preview from '../../components/Preview/Preview';
 import { getPosts } from '../../services/posts';
 import './Posts.css';
 
-export default function Posts() {
+export default function Posts({ currentUser, setCurrentUser }) {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);

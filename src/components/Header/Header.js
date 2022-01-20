@@ -1,11 +1,10 @@
 import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
-import { uploadAvatar } from '../../services/avatars';
 import { logout } from '../../services/users';
 import Avatar from '../Avatar/Avatar';
 import './Header.css';
 
-export default function Header({ currentUser }) {
+export default function Header({ currentUser, setCurrentUser }) {
   const history = useHistory();
 
   const handleSubmit = async (e) => {
@@ -15,6 +14,7 @@ export default function Header({ currentUser }) {
 
   const handleLogout = async () => {
     await logout();
+    setCurrentUser(null);
     history.push('/');
   };
 
