@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders individual post detail 1`] = `
+<div>
+  <div
+    class="post"
+  >
+    <h1>
+      mookie
+    </h1>
+    <span
+      class="post-content"
+    >
+      mookie is an emotional lil bean
+
+    </span>
+    <p>
+      WRITTEN ON 
+      2022-01-20
+    </p>
+  </div>
+  <div
+    class="post-buttons-container"
+  >
+    <button>
+      <a
+        class="post-button"
+        href="/posts/49/edit"
+      >
+        Edit
+      </a>
+    </button>
+    <button
+      class="post-button"
+    >
+      Delete Post
+    </button>
+  </div>
+</div>
+`;
