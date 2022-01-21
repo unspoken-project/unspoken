@@ -36,77 +36,6 @@ exports[`should render list of posts 1`] = `
       >
         <a
           class="click-post"
-          href="/posts/38"
-        >
-          <div
-            class="title"
-          >
-            testing
-          </div>
-        </a>
-        <div
-          class="content"
-        >
-          we are trying to test for hiding edit/delete
-        </div>
-      </div>
-    </div>
-    <div
-      class="preview-card-container"
-    >
-      <div
-        class="preview-card"
-      >
-        <a
-          class="click-post"
-          href="/posts/40"
-        >
-          <div
-            class="title"
-          >
-            testing out the date
-          </div>
-        </a>
-        <div
-          class="content"
-        >
-          last night i forgot to fully recharge my brain but its ok
-
-        </div>
-      </div>
-    </div>
-    <div
-      class="preview-card-container"
-    >
-      <div
-        class="preview-card"
-      >
-        <a
-          class="click-post"
-          href="/posts/49"
-        >
-          <div
-            class="title"
-          >
-            mookie
-          </div>
-        </a>
-        <div
-          class="content"
-        >
-          mookie is an emotional lil bean
-
-        </div>
-      </div>
-    </div>
-    <div
-      class="preview-card-container"
-    >
-      <div
-        class="preview-card"
-      >
-        <a
-          class="click-post"
           href="/posts/50"
         >
           <div
@@ -188,6 +117,29 @@ exports[`should render list of posts 1`] = `
           class="content"
         >
           I need to see the edit and delete buttons to finish coding lol
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="click-post"
+          href="/posts/53"
+        >
+          <div
+            class="title"
+          >
+            Dear Julie...
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          I'm gonna write something to try and make Julie cry here
         </div>
       </div>
     </div>

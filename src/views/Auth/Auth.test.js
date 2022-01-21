@@ -1,11 +1,11 @@
-import { MemoryRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
-import Title from '../Title/Title';
+import { MemoryRouter } from 'react-router-dom';
+import Auth from '../Auth/Auth';
 import { render, screen } from '@testing-library/react';
 
-test('should render title of post', async () => {
+test('should show signin', async () => {
   const { container } = render(
     <MemoryRouter>
-      <Title />
+      <Auth />
     </MemoryRouter>
   );
   await screen.findByText('Sign In');
