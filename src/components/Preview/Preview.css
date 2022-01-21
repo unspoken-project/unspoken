@@ -3,7 +3,7 @@
   flex-direction: column;
   border-radius: 3rem;
   margin: 10px;
-  background-color: rgba(242, 233, 228, 0.2);
+  background-color: rgb(220, 210, 207, 0.3);
   width: 50vw;
   align-items: center;
 }
@@ -28,11 +28,11 @@
   margin: 3px auto 30px auto;
   border-radius: 3rem;
   font-family: 'roboto mono', sans-serif;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(220, 210, 207, 0.5);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 35vw;
+  width: 40vw;
   text-align: center;
 }
 
@@ -42,6 +42,6 @@
 }
 
 .click-post:hover {
-  color: blanchedalmond;
+  color: var(--color-3);
   width: fit-content;
 }
