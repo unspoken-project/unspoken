@@ -7,34 +7,17 @@ exports[`should render individual post 1`] = `
       class="post"
     >
       <h1>
-        Tokio and Nori
+        Dear Julie...
       </h1>
       <span
         class="post-content"
       >
-        cuties
+        Thank you so much for everything you've taught me. Your genuine interest in our learning and passion for coding shine through every day, and kept me excited even when I was exhausted. I'll miss you so much!
       </span>
       <p>
         WRITTEN ON 
-        2022-01-20
+        2022-01-21
       </p>
-    </div>
-    <div
-      class="post-buttons-container"
-    >
-      <button>
-        <a
-          class="post-button"
-          href="/posts/37/edit"
-        >
-          Edit
-        </a>
-      </button>
-      <button
-        class="post-button"
-      >
-        Delete Post
-      </button>
     </div>
   </div>
 </div>

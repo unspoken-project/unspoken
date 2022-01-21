@@ -13,14 +13,14 @@ exports[`should render details and edit 1`] = `
         name="title"
         placeholder="post title..."
         type="text"
-        value="Tokio and Nori"
+        value="Dear Julie..."
       />
       <textarea
         name="content"
         placeholder="tell us more... (minimum 6 characters)"
         type="text"
       >
-        cuties
+        Thank you so much for everything you've taught me. Your genuine interest in our learning and passion for coding shine through every day, and kept me excited even when I was exhausted. I'll miss you so much!
       </textarea>
       <input
         type="submit"

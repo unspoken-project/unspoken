@@ -1,4 +1,4 @@
-import { MemoryRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { MemoryRouter } from 'react-router-dom';
 import Title from '../Title/Title';
 import { render, screen } from '@testing-library/react';
 

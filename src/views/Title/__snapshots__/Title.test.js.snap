@@ -8,13 +8,11 @@ exports[`should render title of post 1`] = `
     <img
       src="https://ipvfiyhmiwmzfnzlbhov.supabase.in/storage/v1/object/public/unspoken/unspoken_stories_header.png"
     />
-    <h3>
+    <p>
       Write your stories, memories or unspoken words while listening to lofi beats. Sometimes all you need is to write it out.
-    </h3>
-    <div
-      class="auth-container"
-    >
-      <div
+    </p>
+    <div>
+      <span
         class="auth-tabs"
       >
         <h3
@@ -27,7 +25,7 @@ exports[`should render title of post 1`] = `
         >
           Sign Up
         </h3>
-      </div>
+      </span>
       <form
         class="auth-form"
       >
@@ -52,6 +50,14 @@ exports[`should render title of post 1`] = `
         />
       </form>
     </div>
+    <footer>
+      <a
+        class="about-btn"
+        href="/about"
+      >
+        About Us
+      </a>
+    </footer>
   </div>
 </div>
 `;

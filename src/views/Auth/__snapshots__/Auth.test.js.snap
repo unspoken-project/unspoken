@@ -2,10 +2,8 @@
 
 exports[`should show signin 1`] = `
 <div>
-  <div
-    class="auth-container"
-  >
-    <div
+  <div>
+    <span
       class="auth-tabs"
     >
       <h3
@@ -18,7 +16,7 @@ exports[`should show signin 1`] = `
       >
         Sign Up
       </h3>
-    </div>
+    </span>
     <form
       class="auth-form"
     >

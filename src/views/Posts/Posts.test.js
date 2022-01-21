@@ -8,6 +8,6 @@ test('should render list of posts', async () => {
       <Posts />
     </MemoryRouter>
   );
-  await screen.findByText('Tokio and Nori');
+  await screen.findByText('Dear Julie...');
   expect(container).toMatchSnapshot();
 });
