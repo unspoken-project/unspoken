@@ -19,9 +19,11 @@ exports[`renders blank post form 1`] = `
       placeholder="tell us more... (minimum 6 characters)"
       type="text"
     />
-    <input
-      type="submit"
-    />
+    <button
+      class="edit-button"
+    >
+      Submit
+    </button>
   </form>
 </div>
 `;

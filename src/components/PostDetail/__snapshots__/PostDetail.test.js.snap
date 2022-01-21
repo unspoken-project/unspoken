@@ -22,9 +22,11 @@ exports[`renders individual post detail 1`] = `
   <div
     class="post-buttons-container"
   >
-    <button>
+    <button
+      class="post-button"
+    >
       <a
-        class="post-button"
+        class="button-link"
         href="/posts/49/edit"
       >
         Edit
