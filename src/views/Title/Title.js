@@ -12,11 +12,11 @@ export default function Title({ setCurrentUser }) {
         you need is to write it out.
       </p>
       <Auth setCurrentUser={setCurrentUser} />
-      <footer>
+      <span className="about-us">
         <Link to="/about" className="about-btn">
           About Us
         </Link>
-      </footer>
+      </span>
     </div>
   );
 }

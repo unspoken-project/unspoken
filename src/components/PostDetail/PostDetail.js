@@ -12,8 +12,8 @@ export default function PostDetail({ post, handleDelete, currentUser }) {
       </div>
       {post.user_id === currentUser.id && (
         <div className="post-buttons-container">
-          <button>
-            <Link to={`/posts/${post.id}/edit`} className="post-button">
+          <button className="post-button">
+            <Link to={`/posts/${post.id}/edit`} className="button-link">
               Edit
             </Link>
           </button>

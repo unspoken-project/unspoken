@@ -4,7 +4,7 @@ import './PostForm.css';
 export default function PostForm({ handleSubmit, updatePost, post }) {
   return (
     <>
-      <form className="post-form" onSubmit={handleSubmit}>
+      <form className="post-form">
         <h1>create post</h1>
         <input
           placeholder="post title..."
@@ -20,7 +20,9 @@ export default function PostForm({ handleSubmit, updatePost, post }) {
           type="text"
           onInput={(e) => updatePost('post_content', e.target.value)}
         />
-        <input type="submit" />
+        <button onClick={handleSubmit} className="edit-button">
+          Submit
+        </button>
       </form>
     </>
   );

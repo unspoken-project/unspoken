@@ -8,27 +8,25 @@ header {
 }
 
 header h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: 'indie flower', sans-serif;
   font-weight: 400;
-  font-display: swap;
-  color: var(--color-5);
+  color: var(--color-4);
   margin: 0;
 }
 
 .header-button {
   font-size: 1.5rem;
-  color: var(--color-1);
+  color: var(--color-4);
   align-self: center;
   text-decoration: none;
-  margin-left: 50px;
   transition: 0.45s;
-  padding: 16px 32px;
+  padding: 16px;
   background-color: transparent;
 }
 
 .header-button:hover {
-  background-color: var(--color-4);
+  background-color: rgb(201, 173, 166, 0.4);
   border-radius: 1.5rem;
   cursor: pointer;
 }
@@ -38,21 +36,4 @@ header h2 {
   align-items: center;
   padding: 0;
   margin: 0;
-}
-
-.home-link {
-  font-size: 1.5rem;
-  color: var(--color-1);
-  align-self: center;
-  text-decoration: none;
-  margin-left: 50px;
-  transition: 0.45s;
-  padding: 16px 32px;
-}
-
-.home-link:hover {
-  background-color: var(--color-4);
-  color: var(--color-1);
-  border-radius: 1.5rem;
-  cursor: pointer;
 }

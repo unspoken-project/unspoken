@@ -3,7 +3,7 @@
   flex-direction: column;
   border-radius: 3rem;
   margin: 10px;
-  background-color: rgb(220, 210, 207, 0.3);
+  background-color: rgb(201, 173, 166, 0.4);
   width: 50vw;
   align-items: center;
 }
@@ -27,7 +27,7 @@
   margin: 3px auto 30px auto;
   border-radius: 3rem;
   font-family: 'roboto mono', sans-serif;
-  background-color: rgb(220, 210, 207, 0.5);
+  background-color: rgb(201, 173, 166, 0.4);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -35,12 +35,22 @@
   text-align: center;
 }
 
-.click-post {
-  color: #fefefe;
+.title-link {
+  color: var(--color-5);
   text-decoration: none;
 }
 
-.click-post:hover {
+.title-link:hover {
   color: var(--color-3);
-  width: fit-content;
+}
+
+.content p {
+  margin-bottom: 0;
+}
+.content a {
+  color: var(--color-5);
+}
+
+.content a:hover {
+  color: var(--color-2);
 }

@@ -3,7 +3,7 @@
   flex-direction: column;
   border-radius: 3rem;
   margin: auto;
-  background-color: rgba(242, 233, 228, 0.2);
+  background-color: rgb(201, 173, 166, 0.4);
   width: 50vw;
   align-items: center;
   padding-bottom: 30px;
@@ -13,7 +13,7 @@
   font-size: 3rem;
   font-family: 'indie flower', sans-serif;
   font-weight: 400;
-  color: #fefefe;
+  color: var(--color-5);
   margin: 0;
 }
 
@@ -28,11 +28,11 @@ textarea {
   border: 0;
   padding: 10px;
   font-size: 1rem;
-  background-color: rgba(242, 233, 228, 0.5);
+  background-color: rgb(201, 173, 166, 0.4);
 }
 
 textarea::placeholder {
-  color: rgb(34, 34, 34);
+  color: var(--color-1);
 }
 input {
   width: 500px;
@@ -41,11 +41,28 @@ input {
   border-radius: 3rem;
   padding: 10px;
   border: 0;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(201, 173, 166, 0.4);
 }
 
 input::placeholder {
-  color: rgb(61, 61, 61);
+  color: var(--color-1);
+}
+
+.edit-button {
+  font-size: 1.5rem;
+  color: var(--color-4);
+  align-self: center;
+  text-decoration: none;
+  transition: 0.45s;
+  padding: 10px;
+  background-color: rgb(201, 173, 166, 0.4);
+}
+
+.edit-button:hover {
+  background-color: rgb(201, 173, 166, 0.8);
+  color: var(--color-1);
+  border-radius: 1.5rem;
+  cursor: pointer;
 }
 
 label {
