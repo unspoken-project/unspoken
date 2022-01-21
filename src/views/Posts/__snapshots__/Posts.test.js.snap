@@ -73,6 +73,66 @@ exports[`should render list of posts 1`] = `
       >
         <a
           class="title-link"
+          href="/posts/69"
+        >
+          <div
+            class="title"
+          >
+            here are some reasons why you rule 
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          to echo what michelle said, learning this new technical, abstract, challenging stuff from someone who isn't a man was a powerful experience for me, too. you made me believe i could learn it. you really believed in me when i didn't believe in myself. without your encouragement and vote of confidence i don't know if i would have made it this far. you're a fantastic teacher, not only do you have extensive knowledge, you're also able to relay it in a way that makes sense to those of us with no experience. that is something many smart people lack. your emotional intelligence mirrors your technical skill, and that is a rarity in the professional world. you're a GEM! thank you for ushering us into the next chapter of our lives with grace, patience, humor, and empathy! can't thank you enough. marty! give this rock star a RAISE!!!!!!!
+          <p>
+            <a
+              href="/posts/69"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/70"
+        >
+          <div
+            class="title"
+          >
+            Julie is a life changer. Thank you.
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          you have given us a priceless gift that will change our lives for generations to come. YOU are the reason I stayed with alchemy through the transition because you are such a rad teacher. Wishing you happiness and fortune for the rest of your and benny's days! &lt;3 
+          <p>
+            <a
+              href="/posts/70"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
           href="/posts/53"
         >
           <div
@@ -197,6 +257,66 @@ And allowed success and goodness in my life?
       >
         <a
           class="title-link"
+          href="/posts/71"
+        >
+          <div
+            class="title"
+          >
+            To Julie and TA's
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          Thank you ALL for providing such an amazing introduction to coding for me. It's been truly a one-of-a-kind experience and a time I will never forget. I've grown so much in these past 4 months technically / mentally speaking and it's all {props} to each one of you. Don't forget to visit Portland! p.s. this app is amazing.
+          <p>
+            <a
+              href="/posts/71"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/72"
+        >
+          <div
+            class="title"
+          >
+            Project Week!
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          We watched project presentations today and they were all so impressive, Alchemy is great!
+          <p>
+            <a
+              href="/posts/72"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
           href="/posts/61"
         >
           <div
@@ -273,6 +393,66 @@ Thank you so much for everything and for being an awesome teacher as well as a f
           <p>
             <a
               href="/posts/66"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/74"
+        >
+          <div
+            class="title"
+          >
+            You guys did great!
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          This app is great. You guys did such a good job on it. We're all very proud of you guys.
+          <p>
+            <a
+              href="/posts/74"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/75"
+        >
+          <div
+            class="title"
+          >
+            Julie you are a beast AND you are the best
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          Coding pro and instructor extraordinaire! Thanks for everything. I thought about quitting when the curriculum changed but I decided to stay because of you. 
+          <p>
+            <a
+              href="/posts/75"
             >
               read more..
             </a>

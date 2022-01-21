@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders personalized header 1`] = `
+<div>
+  <header>
+    <span
+      class="user-info"
+    >
+      <h2>
+        <img
+          class="avatar"
+          src="https://ipvfiyhmiwmzfnzlbhov.supabase.co/storage/v1/object/public/profile-images/avatars/0180dfe8-93a1-41d0-a796-b2ae86039de3.jpg"
+        />
+      </h2>
+      <h2 />
+      <h2>
+        Hello, 
+        miraie
+        !
+      </h2>
+    </span>
+    <span>
+      <button
+        class="header-button"
+      >
+        Create Post
+      </button>
+      <button
+        class="header-button"
+      >
+        Logout
+      </button>
+      <a
+        class="header-button"
+        href="/posts"
+      >
+        Home
+      </a>
+    </span>
+  </header>
+</div>
+`;
