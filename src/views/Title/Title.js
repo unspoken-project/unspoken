@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Auth from '../../views/Auth/Auth';
 import './Title.css';
 
@@ -11,6 +12,11 @@ export default function Title({ setCurrentUser }) {
         you need is to write it out.
       </h3>
       <Auth setCurrentUser={setCurrentUser} />
+      <footer>
+        <Link to="/about" className="about-btn">
+          About Us
+        </Link>
+      </footer>
     </div>
   );
 }
