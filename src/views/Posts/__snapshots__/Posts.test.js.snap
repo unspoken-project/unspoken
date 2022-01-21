@@ -129,6 +129,37 @@ And allowed success and goodness in my life?
         </div>
       </div>
     </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/61"
+        >
+          <div
+            class="title"
+          >
+            Bye Julie
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          Dear Julie, 
+Thank you so much for everything and for being an awesome teacher as well as a friend. Thank you for believing in for me and pushing me to do my best. I will miss you so much and I am super sad you not going to be our teacher. xoxox Cancer babies 4ever
+          <p>
+            <a
+              href="/posts/61"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
