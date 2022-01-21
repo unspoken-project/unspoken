@@ -13,23 +13,21 @@ export default function AuthForm({
   type,
 }) {
   return (
-    <>
-      <form className="auth-form" onSubmit={handleSubmit}>
-        {errorMessage && <p>{errorMessage}</p>}
-        {type === 'signup' && (
-          <div>
-            <label>Username: </label>
-            <input type="username" value={username} onChange={(e) => setUsername(e.target.value)} />
-          </div>
-        )}
-        <label>Email: </label>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+    <form className="auth-form" onSubmit={handleSubmit}>
+      {errorMessage && <p>{errorMessage}</p>}
+      {type === 'signup' && (
+        <>
+          <label>Username: </label>
+          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+        </>
+      )}
+      <label>Email: </label>
+      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
-        <label>Password: </label>
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <label>Password: </label>
+      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
-        <input type="submit" className="submit-btn" />
-      </form>
-    </>
+      <input type="submit" className="submit-btn" />
+    </form>
   );
 }

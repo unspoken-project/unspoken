@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive&family=Gamja+Flower&family=Indie+Flower&family=Roboto+Mono&family=Swanky+and+Moo+Moo&display=swap');
 * {
-  --color-1: #22223b;
-  --color-2: #141e2f;
-  --color-3: #f2aa18;
-  --color-4: #c9ada7;
+  font-family: 'Roboto mono', sans-serif;
+  --color-1: rgb(34, 34, 59);
+  --color-2: rgb(20, 30, 47);
+  --color-3: rgb(242, 170, 24);
+  --color-4: rgb(201, 173, 166);
+  --color-5: rgb(231, 213, 209);
 }
 
 body {

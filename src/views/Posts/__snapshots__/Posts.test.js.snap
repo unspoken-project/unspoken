@@ -12,7 +12,7 @@ exports[`should render list of posts 1`] = `
         class="preview-card"
       >
         <a
-          class="click-post"
+          class="title-link"
           href="/posts/53"
         >
           <div
@@ -25,25 +25,16 @@ exports[`should render list of posts 1`] = `
           class="content"
         >
           Thank you so much for everything you've taught me. Your genuine interest in our learning and passion for coding shine through every day, and kept me excited even when I was exhausted. I'll miss you so much!
+          <p>
+            <a
+              href="/posts/53"
+            >
+              read more..
+            </a>
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="page-nav"
-  >
-    <div
-      class="page-number"
-    >
-      Page: 
-      1
-    </div>
-    <button>
-      Previous Page
-    </button>
-    <button>
-      Next Page
-    </button>
   </div>
 </div>
 `;

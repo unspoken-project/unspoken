@@ -50,14 +50,16 @@ exports[`should render title of post 1`] = `
         />
       </form>
     </div>
-    <footer>
+    <span
+      class="about-us"
+    >
       <a
         class="about-btn"
         href="/about"
       >
         About Us
       </a>
-    </footer>
+    </span>
   </div>
 </div>
 `;

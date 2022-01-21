@@ -22,9 +22,11 @@ exports[`should render details and edit 1`] = `
       >
         Thank you so much for everything you've taught me. Your genuine interest in our learning and passion for coding shine through every day, and kept me excited even when I was exhausted. I'll miss you so much!
       </textarea>
-      <input
-        type="submit"
-      />
+      <button
+        class="edit-button"
+      >
+        Submit
+      </button>
     </form>
     )
   </div>

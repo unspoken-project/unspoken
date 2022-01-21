@@ -3,7 +3,7 @@
   flex-direction: column;
   border-radius: 3rem;
   margin: auto;
-  background-color: rgb(220, 210, 207, 0.3);
+  background-color: rgb(201, 173, 166, 0.4);
   width: 50vw;
   align-items: center;
 }
@@ -12,12 +12,12 @@
   font-size: 3rem;
   font-family: 'indie flower', sans-serif;
   font-weight: 400;
-  color: #fefefe;
+  color: var(--color-5);
   margin: 0;
 }
 
 .post p {
-  color: white;
+  color: var(--color-4);
 }
 
 .post-content {
@@ -25,8 +25,8 @@
   margin: 3px auto 10px auto;
   border-radius: 3rem;
   font-family: 'roboto mono', sans-serif;
-  background-color: rgb(220, 210, 207, 0.5);
-  width: 35vw;
+  background-color: rgb(201, 173, 166, 0.4);
+  width: 40vw;
   text-align: center;
 }
 
@@ -39,17 +39,21 @@
 
 .post-button {
   font-size: 1.5rem;
-  color: var(--color-5);
+  color: var(--color-4);
   align-self: center;
   text-decoration: none;
-  margin-left: 50px;
   transition: 0.45s;
-  padding: 16px 32px;
+  padding: 16px;
   background-color: transparent;
 }
 
 .post-button:hover {
-  background-color: var(--color-4);
+  background-color: rgb(201, 173, 166, 0.4);
   border-radius: 1.5rem;
   cursor: pointer;
+}
+
+.button-link {
+  text-decoration: none;
+  color: var(--color-4);
 }
