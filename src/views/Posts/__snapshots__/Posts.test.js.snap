@@ -35,6 +35,131 @@ exports[`should render list of posts 1`] = `
         </div>
       </div>
     </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/58"
+        >
+          <div
+            class="title"
+          >
+            Friend
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          Over 5 years?? Wild that people so far away can meet and learn about and know each other. One day I'll drive down to you again and we can HUG once more!!!
+          <p>
+            <a
+              href="/posts/58"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/59"
+        >
+          <div
+            class="title"
+          >
+            as a woman
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          I was worried about going into tech; the biases from others, the difficult questions they'd ask me, the internal conflicts. But being taught by Julie was the best introduction into this world I could have asked for. I saw how intelligent, powerful and graceful she is, and it inspired me to be as such. Im sure Julie has some stories too to have gotten to where she is now, and I hope she knows that she has become a part of mine.
+          <p>
+            <a
+              href="/posts/59"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/60"
+        >
+          <div
+            class="title"
+          >
+            what would have happened
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          What would have happened if I gave my 500%
+
+Stepped on the gas pedal all the way
+
+And allowed success and goodness in my life?
+          <p>
+            <a
+              href="/posts/60"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/61"
+        >
+          <div
+            class="title"
+          >
+            Bye Julie
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          Dear Julie, 
+Thank you so much for everything and for being an awesome teacher as well as a friend. Thank you for believing in for me and pushing me to do my best. I will miss you so much and I am super sad you not going to be our teacher. xoxox Cancer babies 4ever
+          <p>
+            <a
+              href="/posts/61"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;

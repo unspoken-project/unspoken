@@ -9,7 +9,7 @@ export default function About() {
         <div className="profile-card">
           <img src="../../ryssa.jpg" />
           <h3>Ryssa</h3>
-          <p>this is words about Karyssa.</p>
+          <p>Karyssa is a full stack software engineer and is super cool.</p>
           <span>
             <a href="https://github.com/karyssa-dandrea" target="_blank" rel="noreferrer">
               <img className="link-img" src="../../Octocat.png" />
@@ -23,7 +23,10 @@ export default function About() {
         <div className="profile-card">
           <img src="../../ian.png" />
           <h3>Ian</h3>
-          <p>this is words about Ian.</p>
+          <p>
+            Ian is a web developer in Reno, NV. Drawn to and inspired by storytelling, this project
+            is a natural extension of his curiosity and love of human connection.
+          </p>
           <span>
             <a href="https://github.com/ian-christiansen" target="_blank" rel="noreferrer">
               <img className="link-img" src="../../Octocat.png" />
@@ -35,9 +38,12 @@ export default function About() {
         </div>
 
         <div className="profile-card">
-          <img src="../../mira.jpeg" />
+          <img src="https://ipvfiyhmiwmzfnzlbhov.supabase.in/storage/v1/object/public/unspoken/Image from iOS.jpg" />
           <h3>Mira</h3>
-          <p>this is words about Mira.</p>
+          <p>
+            Mira is a full stack software developer and loves connecting with others through
+            stories. Her first journal entry ever was &quot;I hope I get a dog one day&quot;.
+          </p>
           <span>
             <a href="https://github.com/mira-kine" target="_blank" rel="noreferrer">
               <img className="link-img" src="../../Octocat.png" />
@@ -49,9 +55,9 @@ export default function About() {
         </div>
 
         <div className="profile-card">
-          <img src="../../indy.jpg" />
+          <img src="https://ipvfiyhmiwmzfnzlbhov.supabase.in/storage/v1/object/public/unspoken/indy.jpg" />
           <h3>Indy</h3>
-          <p>this is words about Indy.</p>
+          <p>Indy is full stack software engineer and an avid journaler/memoir writer.</p>
           <span>
             <a href="https://github.com/H-Indiana-Holdsworth" target="_blank" rel="noreferrer">
               <img className="link-img" src="../../Octocat.png" />
