@@ -1,3 +1,42 @@
+/* .home-btn {
+  font-size: 2rem;
+  color: white;
+  align-self: center;
+  text-decoration: none;
+  margin-left: 50px;
+  transition: 0.45s;
+}
+
+.home-btn.active {
+  background-color: var(--color-4);
+  padding: 16px 32px;
+  border-radius: 1.5rem;
+}
+
+.home-btn:hover {
+  background-color: var(--color-4);
+  padding: 16px 32px;
+  border-radius: 1.5rem;
+  cursor: pointer;
+} */
+
+.home-btn {
+  font-size: 1.5rem;
+  color: var(--color-5);
+  align-self: center;
+  text-decoration: none;
+  margin-left: 50px;
+  transition: 0.45s;
+  padding: 16px 32px;
+  background-color: transparent;
+}
+
+.home-btn:hover {
+  background-color: var(--color-4);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
 .about-cards {
   font-size: 16px;
   color: white;

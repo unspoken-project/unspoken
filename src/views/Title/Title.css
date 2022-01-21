@@ -8,3 +8,21 @@
 .title-container h3 {
   color: white;
 }
+
+.about-btn {
+  font-size: 1.5rem;
+  color: var(--color-5);
+  align-self: center;
+  text-decoration: none;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  transition: 0.45s;
+  padding: 16px 32px;
+  background-color: transparent;
+}
+
+.about-btn:hover {
+  background-color: var(--color-4);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
