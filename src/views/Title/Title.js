@@ -14,7 +14,7 @@ export default function Title({ setCurrentUser }) {
       <Auth setCurrentUser={setCurrentUser} />
       <span className="about-us">
         <Link to="/about" className="about-btn">
-          About Us
+          About Us.
         </Link>
       </span>
     </div>
