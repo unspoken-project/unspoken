@@ -18,7 +18,7 @@ header h2 {
 
 .header-button {
   font-size: 1.5rem;
-  color: var(--color-5);
+  color: var(--color-1);
   align-self: center;
   text-decoration: none;
   margin-left: 50px;
@@ -42,7 +42,7 @@ header h2 {
 
 .home-link {
   font-size: 1.5rem;
-  color: var(--color-5);
+  color: var(--color-1);
   align-self: center;
   text-decoration: none;
   margin-left: 50px;
@@ -52,6 +52,7 @@ header h2 {
 
 .home-link:hover {
   background-color: var(--color-4);
+  color: var(--color-1);
   border-radius: 1.5rem;
   cursor: pointer;
 }

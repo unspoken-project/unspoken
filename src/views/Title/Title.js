@@ -7,10 +7,10 @@ export default function Title({ setCurrentUser }) {
   return (
     <div className="title-container">
       <img src="https://ipvfiyhmiwmzfnzlbhov.supabase.in/storage/v1/object/public/unspoken/unspoken_stories_header.png" />
-      <h3>
+      <p>
         Write your stories, memories or unspoken words while listening to lofi beats. Sometimes all
         you need is to write it out.
-      </h3>
+      </p>
       <Auth setCurrentUser={setCurrentUser} />
       <footer>
         <Link to="/about" className="about-btn">

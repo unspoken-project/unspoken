@@ -27,8 +27,8 @@ export default function Auth({ setCurrentUser }) {
     }
   };
   return (
-    <div className="auth-container">
-      <div className="auth-tabs">
+    <div>
+      <span className="auth-tabs">
         <h3
           onClick={() => {
             setType('signin');
@@ -46,7 +46,7 @@ export default function Auth({ setCurrentUser }) {
         >
           Sign Up
         </h3>
-      </div>
+      </span>
       <AuthForm
         username={username}
         setUsername={setUsername}
