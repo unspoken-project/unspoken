@@ -13,6 +13,66 @@ exports[`should render list of posts 1`] = `
       >
         <a
           class="title-link"
+          href="/posts/67"
+        >
+          <div
+            class="title"
+          >
+            Julie...what can I say
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          more like, what I can do. You've changed my life. I know you might not want all the credit, but I wouldn't have gotten this far without you. You were the key to the start of the rest of my life. And I look forward to seeing you throughout the future.
+          <p>
+            <a
+              href="/posts/67"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/68"
+        >
+          <div
+            class="title"
+          >
+            based julie
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          dang what an amazing role model!!!!!!!! life changing
+          <p>
+            <a
+              href="/posts/68"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
           href="/posts/53"
         >
           <div
