@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders blank post form 1`] = `
+<div>
+  <form
+    class="post-form"
+  >
+    <h1>
+      create post
+    </h1>
+    <input
+      name="title"
+      placeholder="post title..."
+      type="text"
+      value=""
+    />
+    <textarea
+      name="content"
+      placeholder="tell us more... (minimum 6 characters)"
+      type="text"
+    />
+    <input
+      type="submit"
+    />
+  </form>
+</div>
+`;
