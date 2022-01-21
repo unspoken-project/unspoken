@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 
 test('should render individual post', async () => {
   const { container } = render(
-    <MemoryRouter initialEntries={['/posts/37']}>
+    <MemoryRouter initialEntries={['/posts/53']}>
       <Route exact path="/posts/:id">
         <Post
           currentUser={{
@@ -44,7 +44,7 @@ test('should render individual post', async () => {
       </Route>
     </MemoryRouter>
   );
-  await screen.findByText('Tokio and Nori');
+  await screen.findByText('Dear Julie...');
   screen.debug();
   expect(container).toMatchSnapshot();
 });

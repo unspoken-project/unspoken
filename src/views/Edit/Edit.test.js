@@ -4,10 +4,10 @@ import { MemoryRouter, Route } from 'react-router-dom';
 
 test('should render details and edit', async () => {
   const { container } = render(
-    <MemoryRouter initialEntries={['/posts/37/edit']}>
+    <MemoryRouter initialEntries={['/posts/53/edit']}>
       <Route exact path="/posts/:id/edit" component={Edit} />
     </MemoryRouter>
   );
-  await screen.findByDisplayValue('cuties');
+  await screen.findByDisplayValue('Dear Julie...');
   expect(container).toMatchSnapshot();
 });
