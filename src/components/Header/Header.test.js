@@ -2,10 +2,10 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import Header from './Header';
 
-test.skip('renders individual post detail', async () => {
+test('renders personalized header', async () => {
   const { container } = render(
-    <MemoryRouter initialEntries={['/posts/36']}>
-      <Route path="/posts/:id">
+    <MemoryRouter>
+      <Route>
         <Header
           currentUser={{
             id: '0180dfe8-93a1-41d0-a796-b2ae86039de3',
@@ -44,6 +44,6 @@ test.skip('renders individual post detail', async () => {
       </Route>
     </MemoryRouter>
   );
-  await screen.findByText('hello,');
+  await screen.findByText('Hello, miraie!');
   expect(container).toMatchSnapshot();
 });
