@@ -190,6 +190,36 @@ Thank you so much for everything and for being an awesome teacher as well as a f
         </div>
       </div>
     </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/66"
+        >
+          <div
+            class="title"
+          >
+            we're the lucky ones
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          We're so lucky to have an instructor like Julie and a cohort like this. We've learned so much, including how to be supports for one another. Julie, KIT, and don't ever change. Come visit us!
+          <p>
+            <a
+              href="/posts/66"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
