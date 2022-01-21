@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render list of posts 1`] = `
+<div>
+  <div
+    class="post-list"
+  >
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="click-post"
+          href="/posts/36"
+        >
+          <div
+            class="title"
+          >
+            ta overload
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          we have to remember what we did 5 months ago lol
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="click-post"
+          href="/posts/50"
+        >
+          <div
+            class="title"
+          >
+            we are almost done
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          almost done LESSSSGOOOOOOOO
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="click-post"
+          href="/posts/51"
+        >
+          <div
+            class="title"
+          >
+            benny
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          benny is the cutest and most powerfulest dog
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="click-post"
+          href="/posts/37"
+        >
+          <div
+            class="title"
+          >
+            Tokio and Nori
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          cuties
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="click-post"
+          href="/posts/52"
+        >
+          <div
+            class="title"
+          >
+            writing a post
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          I need to see the edit and delete buttons to finish coding lol
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="click-post"
+          href="/posts/53"
+        >
+          <div
+            class="title"
+          >
+            Dear Julie...
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          I'm gonna write something to try and make Julie cry here
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="page-nav"
+  >
+    <div
+      class="page-number"
+    >
+      Page: 
+      1
+    </div>
+    <button>
+      Previous Page
+    </button>
+    <button>
+      Next Page
+    </button>
+  </div>
+</div>
+`;

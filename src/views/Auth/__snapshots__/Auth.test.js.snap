@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should show signin 1`] = `
+<div>
+  <div
+    class="auth-container"
+  >
+    <div
+      class="auth-tabs"
+    >
+      <h3
+        class="active"
+      >
+        Sign In
+      </h3>
+      <h3
+        class=""
+      >
+        Sign Up
+      </h3>
+    </div>
+    <form
+      class="auth-form"
+    >
+      
+      <label>
+        Email: 
+      </label>
+      <input
+        type="email"
+        value=""
+      />
+      <label>
+        Password: 
+      </label>
+      <input
+        type="password"
+        value=""
+      />
+      <input
+        class="submit-btn"
+        type="submit"
+      />
+    </form>
+  </div>
+</div>
+`;
