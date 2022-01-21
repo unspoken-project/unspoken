@@ -6,7 +6,6 @@ import './Posts.css';
 export default function Posts() {
   const [posts, setPosts] = useState([]);
   const [loading2, setLoading2] = useState(true);
-  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const fetchData = async () => {
