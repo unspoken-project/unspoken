@@ -1,15 +1,27 @@
 .about-cards {
-  font-size: 2rem;
+  font-size: 16px;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 img {
   width: 200px;
   height: 200px;
+  object-fit: contain;
+  margin-top: 2rem;
+}
+
+.link-img {
+  width: 2.25em;
+  height: 2.25em;
+}
+
+.link-img:hover {
+  cursor: pointer;
 }
 
 .ryssa-card {
