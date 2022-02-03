@@ -45,6 +45,5 @@ test('should render individual post', async () => {
     </MemoryRouter>
   );
   await screen.findByText('Dear Julie...');
-  screen.debug();
   expect(container).toMatchSnapshot();
 });
