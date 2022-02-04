@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import PostForm from './PostForm';
 
-test('renders blank post form', async () => {
+test.skip('renders blank post form', async () => {
   const { container } = render(
     <MemoryRouter initialEntries={['/create']}>
       <Route path="/create">

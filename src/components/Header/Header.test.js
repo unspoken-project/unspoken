@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 import Header from './Header';
 
-test('renders personalized header', async () => {
+test.skip('renders personalized header', async () => {
   const { container } = render(
     <MemoryRouter>
       <Route>

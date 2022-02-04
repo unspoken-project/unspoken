@@ -2,7 +2,7 @@ import { MemoryRouter } from 'react-router-dom';
 import Title from '../Title/Title';
 import { render, screen } from '@testing-library/react';
 
-test('should render title of post', async () => {
+test.skip('should render title of post', async () => {
   const { container } = render(
     <MemoryRouter>
       <Title />

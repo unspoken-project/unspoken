@@ -2,7 +2,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 import Create from '../Create/Create';
 
-test('should render create post page', async () => {
+test.skip('should render create post page', async () => {
   const { container } = render(
     <MemoryRouter>
       <Create />
