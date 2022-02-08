@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import PostDetail from './PostDetail';
 import { MemoryRouter, Route } from 'react-router-dom';
 
-test('renders individual post detail', async () => {
+test.skip('renders individual post detail', async () => {
   const { container } = render(
     <MemoryRouter initialEntries={['/posts/49']}>
       <Route path="/posts/:id">

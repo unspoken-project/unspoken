@@ -460,6 +460,68 @@ Thank you so much for everything and for being an awesome teacher as well as a f
         </div>
       </div>
     </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/76"
+        >
+          <div
+            class="title"
+          >
+            Looks like people are saying nice things about Julie here so...
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          In the words of one of my favorite authors, "Be prepared to struggle, both intellectually and creatively. The truth is, I don't know of any human activity as demanding of one's imagination, intuition and ingenuity. But I do it anyway. I do it because I love it and because I can't help it. Once you've been to the jungle, you can never really leave. It haunts your waking dreams."
+
+Thank you Julie for helping me in my struggle! You are an inspiration and a role model. It's nice to see you had such an impact on the September cohort, I know you did on mine as well.
+          <p>
+            <a
+              href="/posts/76"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="preview-card-container"
+    >
+      <div
+        class="preview-card"
+      >
+        <a
+          class="title-link"
+          href="/posts/78"
+        >
+          <div
+            class="title"
+          >
+            Thank you...
+          </div>
+        </a>
+        <div
+          class="content"
+        >
+          I've loved teaching all of you. Thank you for these lovely words. Good luck in the next module -- I'll be rooting for all of you and can't wait to see what you build. 
+          <p>
+            <a
+              href="/posts/78"
+            >
+              read more..
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;

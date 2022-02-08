@@ -2,7 +2,7 @@ import { MemoryRouter } from 'react-router-dom';
 import Auth from '../Auth/Auth';
 import { render, screen } from '@testing-library/react';
 
-test('should show signin', async () => {
+test.skip('should show signin', async () => {
   const { container } = render(
     <MemoryRouter>
       <Auth />

@@ -2,7 +2,7 @@ import { MemoryRouter, Route } from 'react-router-dom';
 import Post from '../Post/Post';
 import { render, screen } from '@testing-library/react';
 
-test('should render individual post', async () => {
+test.skip('should render individual post', async () => {
   const { container } = render(
     <MemoryRouter initialEntries={['/posts/53']}>
       <Route exact path="/posts/:id">
@@ -45,6 +45,5 @@ test('should render individual post', async () => {
     </MemoryRouter>
   );
   await screen.findByText('Dear Julie...');
-  screen.debug();
   expect(container).toMatchSnapshot();
 });
