@@ -28,3 +28,9 @@ export async function deletePost(id) {
   const resp = await client.from('unspoken').delete().match({ id });
   return checkError(resp);
 }
+
+export async function getMyPosts(user) {
+  const resp = await client.from('unspoken').select('*').match({ user });
+  console.log('resp', resp);
+  return checkError(resp);
+}
