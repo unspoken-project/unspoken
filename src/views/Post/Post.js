@@ -9,6 +9,7 @@ export default function Post({ currentUser }) {
   const [loading, setLoading] = useState(true);
   const params = useParams();
   const history = useHistory();
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await getPostById(params.id);

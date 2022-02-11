@@ -11,6 +11,7 @@ import AudioPlayer from './components/Audio/AudioPlayer';
 import Title from './views/Title/Title';
 import About from './views/About/About';
 import Header from './components/Header/Header';
+import Profile from './views/Profile/Profile';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -49,6 +50,9 @@ function App() {
           </ProtectedRoute>
           <ProtectedRoute currentUser={currentUser} exact path="/posts/:id">
             <Post currentUser={currentUser} />
+          </ProtectedRoute>
+          <ProtectedRoute currentUser={currentUser} exact path="/profile">
+            <Profile currentUser={currentUser} />
           </ProtectedRoute>
           <Route exact path="/about">
             <About />
