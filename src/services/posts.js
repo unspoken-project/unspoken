@@ -31,6 +31,5 @@ export async function deletePost(id) {
 
 export async function getMyPosts(user) {
   const resp = await client.from('unspoken').select('*').match({ user });
-  console.log('resp', resp);
   return checkError(resp);
 }
