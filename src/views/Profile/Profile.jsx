@@ -1,27 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import UserProfile from '../../components/UserProfile/UserProfile';
-import { getMyPosts } from '../../services/posts';
+// import React, { useState, useEffect } from 'react';
+// import UserProfile from '../../components/UserProfile/UserProfile';
+// import { getMyPosts, getPostById } from '../../services/posts';
+import { usePosts } from '../../context/PostsProvider';
+import './Profile.css';
 
-export default function Profile() {
-  const [myPosts, setMyPosts] = useState([]);
-  const [loading3, setLoading3] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const resp = await getMyPosts();
-      setMyPosts(resp);
-      setLoading3(false);
-    };
-    fetchData();
-  }, []);
-
-  if (loading3) {
-    return <h3>Loading...</h3>;
-  }
+export default function Profile({ currentUser }) {
+  console.log('currentUser', currentUser);
+  const { posts } = usePosts();
+  console.log('posts', posts);
 
   return (
     <>
-      <UserProfile />
+      <div>
+        {posts.user_id === currentUser.id} && (
+        {posts.map((post) => (
+          <div key={post.id} className="testing">
+            {post.post_content}
+          </div>
+        ))}
+        )
+      </div>
     </>
   );
 }

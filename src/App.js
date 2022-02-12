@@ -12,6 +12,7 @@ import Title from './views/Title/Title';
 import About from './views/About/About';
 import Header from './components/Header/Header';
 import Profile from './views/Profile/Profile';
+import { PostsProvider } from './context/PostsProvider';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -51,9 +52,11 @@ function App() {
           <ProtectedRoute currentUser={currentUser} exact path="/posts/:id">
             <Post currentUser={currentUser} />
           </ProtectedRoute>
-          <ProtectedRoute currentUser={currentUser} exact path="/profile">
-            <Profile currentUser={currentUser} />
-          </ProtectedRoute>
+          <PostsProvider>
+            <ProtectedRoute currentUser={currentUser} exact path="/profile">
+              <Profile currentUser={currentUser} />
+            </ProtectedRoute>
+          </PostsProvider>
           <Route exact path="/about">
             <About />
           </Route>

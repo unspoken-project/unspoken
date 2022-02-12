@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Preview from '../../components/Preview/Preview';
-import { getPosts } from '../../services/posts';
 import './Posts.css';
+import { getPosts } from '../../services/posts';
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
