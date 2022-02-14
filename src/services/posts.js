@@ -25,6 +25,6 @@ export async function editPost(post) {
 }
 
 export async function deletePost(id) {
-  const resp = await client.from('unspoken').delete().match({ id });
+  const resp = await client.from('unspoken').delete().match({ id }).single();
   return checkError(resp);
 }

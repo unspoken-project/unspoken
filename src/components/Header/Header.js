@@ -12,6 +12,11 @@ export default function Header({ currentUser, setCurrentUser }) {
     history.push(`/create`);
   };
 
+  const handleClickProfile = async (e) => {
+    e.preventDefault();
+    history.push(`/profile`);
+  };
+
   const handleLogout = async () => {
     await logout();
     setCurrentUser(null);
@@ -30,6 +35,9 @@ export default function Header({ currentUser, setCurrentUser }) {
           <span>
             <button onClick={handleSubmit} className="header-button">
               Create Post
+            </button>
+            <button onClick={handleClickProfile} className="header-button">
+              My Profile
             </button>
             <button onClick={handleLogout} className="header-button">
               Logout

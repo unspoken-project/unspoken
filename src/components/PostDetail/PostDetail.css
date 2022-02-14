@@ -58,3 +58,7 @@
   text-decoration: none;
   color: var(--color-4);
 }
+
+h1 {
+  color: wheat;
+}
