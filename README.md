@@ -8,7 +8,7 @@
 ## Ian Christiansen
 [LinkedIn](https://www.linkedin.com/in/ianchjsx/) [GitHub](https://github.com/ian-ch-jsx)
 
-## Karyssa 
+## Karyssa Dandrea
 [LinkedIn](https://www.linkedin.com/in/karyssa-dandrea/) [GitHub](https://github.com/karyssa-dandrea)
 
 ## Indiana H. Holdsworth
