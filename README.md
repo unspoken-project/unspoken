@@ -1,7 +1,7 @@
 # Unspoken
 
 ## *Write your stories, memories or unspoken words while listening to lofi beats. Sometimes all you need is to write it out.*
-
+![Unspoken banner](./unspoken-ss.jpg)
 
 # Team Members
 
