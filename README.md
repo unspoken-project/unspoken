@@ -1,41 +1,28 @@
-# EPIC Plan
+# Unspoken
 
-## App.js / Routes
+## *Write your stories, memories or unspoken words while listening to lofi beats. Sometimes all you need is to write it out.*
 
-- Protected Routes
-  - [ ] Full home page
-  - [ ] "/create" adding a post
-  - [ ] "/post/:id/edit" edit post
-- Routes
-  - [ ] "/" title page + preview
-  - [ ] "/" main home page if you're signed in
-  - [ ] "/auth" sign in/sign up
-  - [ ] "/post/:id" Single Post View w/ Post detail
-  - [ ] "/about" about us
 
-## Utils
+# Team Members
 
-- [x] protected route function
+## Ian Christiansen
+[LinkedIn](https://www.linkedin.com/in/ianchjsx/) [GitHub](https://github.com/ian-ch-jsx)
 
-## Views
+## Karyssa 
+[LinkedIn](https://www.linkedin.com/in/karyssa-dandrea/) [GitHub](https://github.com/karyssa-dandrea)
 
-- [x] Auth.js (sign in/sign up)
-- [x] Title.js
-- [x] Posts.js
-- [x] Post.js
-- [x] Edit.js
-- [x] Create.js
-- [x] About.js
+## Indiana H. Holdsworth
+[LinkedIn](https://www.linkedin.com/in/h-indiana-holdsworth/) [GitHub](https://github.com/H-Indiana-Holdsworth)
 
-## Components
+## Mira Kinebuchi
+[LinkedIn](https://www.linkedin.com/in/mira-kinebuchi/) [GitHub](https://github.com/mira-kine)
 
-- [x] AuthForm.js
-- [x] Preview.js (with title and previews)
-- [x] PostList.js
-- [ x] PostForm.js (for both Edit and Create)
+## Planning
 
-## Services
+Checkout our [Miro board](https://miro.com/app/board/uXjVOV_QN08=/)
 
-- [x] client.js
-- [x] posts.js
-- [x] users.js
+## Libraries, Frameworks, Tools used:
+* React
+* React-Router-Dom
+* Netlify
+* Supabase
